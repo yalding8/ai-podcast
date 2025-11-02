@@ -1,0 +1,45 @@
+
+================================================================================
+Run at 2025-11-02T14:15:11
+[2025-11-02T14:11:13] stage=request | source=Times Higher Education
+  rss: https://www.timeshighereducation.com/news.rss
+  error: 404 Client Error: Not Found for url: https://www.timeshighereducation.com/news.rss
+[2025-11-02T14:11:22] stage=parse | source=IRCC Newsroom
+  rss: https://www.canada.ca/en/immigration-refugees-citizenship.atom
+  error: <unknown>:2:0: syntax error | 片段: <!doctype html> <html lang="en" xmlns="http://www.w3.org/1999/xhtml">     <head prefix="og: http://ogp.me/ns#">          <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <meta charset="utf-8"/> ...
+[2025-11-02T14:11:36] stage=request | source=Australian Department of Home Affairs
+  rss: https://www.homeaffairs.gov.au/news-media/archive/rss.xml
+  error: 404 Client Error: Not Found for url: https://www.homeaffairs.gov.au/news-media/archive/rss.xml
+[2025-11-02T14:12:48] stage=request | source=Chevening Scholarships
+  rss: https://www.chevening.org/feed/
+  error: HTTPSConnectionPool(host='www.chevening.org', port=443): Read timed out. (read timeout=20)
+[2025-11-02T14:13:04] stage=request | source=Inside Higher Ed
+  rss: https://www.insidehighered.com/news.rss
+  error: 404 Client Error: Not Found for url: https://www.insidehighered.com/news.rss
+[2025-11-02T14:13:22] stage=request | source=Education New Zealand
+  rss: https://www.enz.govt.nz/news-and-research/news-and-events/rss
+  error: 404 Client Error: Not Found for url: https://www.enz.govt.nz/news-and-research/news-and-events/rss
+[2025-11-02T14:13:36] stage=request | source=Campus France
+  rss: https://www.campusfrance.org/en/rss
+  error: 403 Client Error: Forbidden for url: https://www.campusfrance.org/en/rss
+[2025-11-02T14:13:54] stage=request | source=DAAD
+  rss: https://www.daad.de/en/the-daad/news/news/rss.xml
+  error: 404 Client Error: Not Found for url: https://www.daad.de/en/the-daad/news/news/rss.xml/
+[2025-11-02T14:14:02] stage=parse | source=Singapore Ministry of Education
+  rss: https://www.moe.gov.sg/rss/press-releases
+  error: <unknown>:10:64: not well-formed (invalid token) | 片段:         <!-- Solr url configuration -->         <!-- Solr url configuration -->         <!-- Solr url configuration -->         <!-- Solr url configuration -->         <!-- Solr url configuration ...
+[2025-11-02T14:14:15] stage=request | source=University of Cambridge
+  rss: https://www.cam.ac.uk/news/rss
+  error: 404 Client Error: Not Found for url: https://www.cam.ac.uk/news/rss
+[2025-11-02T14:14:17] stage=parse | source=MIT News
+  rss: https://news.mit.edu/rss
+  error: <unknown>:23:46: not well-formed (invalid token) | 片段: <!DOCTYPE html> <html lang="en" class="no-js">   <head>     <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="twitter:site" content="@mit" /...
+[2025-11-02T14:14:31] stage=request | source=University of Toronto
+  rss: https://www.utoronto.ca/news/rss.xml
+  error: 404 Client Error: Not Found for url: https://www.utoronto.ca/news/rss.xml
+[2025-11-02T14:14:56] stage=request | source=QS Insights Magazine
+  rss: https://www.qs.com/insights-magazine/feed/
+  error: 404 Client Error: Not Found for url: https://www.qs.com/insights-magazine/feed
+[2025-11-02T14:15:11] stage=request | source=World Bank Education
+  rss: https://blogs.worldbank.org/education/rss
+  error: 404 Client Error: Not Found for url: https://blogs.worldbank.org/en/education/rss

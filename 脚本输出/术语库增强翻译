@@ -1,0 +1,15 @@
+// 建立5000+条目的术语库
+{
+  "universities": {
+    "University of Cambridge": "剑桥大学",
+    "MIT": "麻省理工学院（MIT）"
+  },
+  "visas": {
+    "Tier 4": "英国学生签证（第四层级）",
+    "F-1": "美国F-1学生签证"
+  },
+  "exams": {
+    "IELTS": "雅思（IELTS）",
+    "GRE": "美国研究生入学考试（GRE）"
+  }
+}

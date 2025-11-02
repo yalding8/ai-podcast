@@ -1,0 +1,29 @@
+// 每条新闻必须附带证据包
+{
+  "headline": "英国取消PSW签证2年限制",
+  "evidence": [
+    {
+      "type": "primary",  // 一手来源
+      "url": "https://www.gov.uk/...",
+      "date": "2025-01-15",
+      "excerpt": "原文关键句（<50字）",
+      "screenshot_hash": "a3f8d9e2..."  // 存档截图
+    },
+    {
+      "type": "secondary",  // 权威二手
+      "url": "https://www.icef.com/...",
+      "date": "2025-01-16"
+    }
+  ],
+  "verification_status": "verified",  // verified / pending / failed
+  "confidence_level": "high"  // high / medium / low
+}
+```
+
+#### 验证流程
+```
+声明 → 搜索GDELT → 搜索官网 → 两边都支持？
+                                    ↓ 是
+                                  通过
+                                    ↓ 否
+                              标注"待核实"

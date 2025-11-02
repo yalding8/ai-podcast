@@ -1,0 +1,200 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Generate podcast script via LLM using a Stage 3 prompt file."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+from datetime import date
+from pathlib import Path
+from typing import Optional
+
+try:
+    from openai import OpenAI  # type: ignore
+except ImportError:  # pragma: no cover
+    OpenAI = None
+
+try:
+    import anthropic  # type: ignore
+except ImportError:  # pragma: no cover
+    anthropic = None
+
+try:
+    import requests
+except ImportError:  # pragma: no cover
+    requests = None
+
+DEFAULT_PROVIDER = os.getenv("STAGE3_PROVIDER") or os.getenv("KEYPOINT_PROVIDER") or "deepseek"
+DEFAULT_MODEL = os.getenv("STAGE3_MODEL") or os.getenv("KEYPOINT_MODEL") or "deepseek-chat"
+DEFAULT_SUMMARY_PATH = Path("ai_poadcast_main/news_queue_with_summaries.json")
+STAGE3_INPUT_DIR = Path("ai_poadcast_main/stage3_inputs")
+STAGE3_OUTPUT_DIR = Path("脚本输出")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate Stage 3 podcast script from prompt file.")
+    parser.add_argument("--prompt", help="Path to Stage 3 prompt file (Markdown).")
+    parser.add_argument("--date", help="Episode date (YYYY-MM-DD); derives prompt/output paths when --prompt 未指定。")
+    parser.add_argument("--provider", default=DEFAULT_PROVIDER, help="LLM provider (openai/anthropic/deepseek)。")
+    parser.add_argument("--model", default=DEFAULT_MODEL, help="LLM model name。")
+    parser.add_argument("--max-tokens", type=int, default=int(os.getenv("STAGE3_MAX_TOKENS", "1800")), help="Maximum tokens for response.")
+    parser.add_argument("--temperature", type=float, default=float(os.getenv("STAGE3_TEMPERATURE", "0.4")), help="Sampling temperature。")
+    parser.add_argument("--output", help="自定义输出文件路径；默认写入 脚本输出/<date>/episode_<date>_v1.md。")
+    parser.add_argument("--overwrite", action="store_true", help="已存在目标文件时覆盖。")
+    parser.add_argument("--print-only", action="store_true", help="仅打印生成结果，不写入文件。")
+    return parser.parse_args()
+
+
+def resolve_prompt_path(args: argparse.Namespace) -> tuple[Path, str]:
+    if args.prompt:
+        path = Path(args.prompt)
+        if not path.exists():
+            sys.stderr.write(f"❌ Prompt 文件不存在：{path}\n")
+            sys.exit(1)
+        episode_date = args.date or path.stem.replace("episode_", "")[:10]
+        return path, episode_date
+    if not args.date:
+        episode_date = date.today().isoformat()
+    else:
+        episode_date = args.date
+    prompt_path = STAGE3_INPUT_DIR / episode_date / f"episode_{episode_date}_prompt.md"
+    if not prompt_path.exists():
+        sys.stderr.write(f"❌ 未找到默认 Prompt：{prompt_path}\n")
+        sys.exit(1)
+    return prompt_path, episode_date
+
+
+def read_prompt(path: Path) -> str:
+    content = path.read_text(encoding="utf-8")
+    if not content.strip():
+        sys.stderr.write("⚠️ Prompt 内容为空。\n")
+    return content
+
+
+def call_openai(model: str, prompt: str, temperature: float, max_tokens: int) -> str:
+    if OpenAI is None:
+        raise RuntimeError("未安装 openai 库。")
+    client = OpenAI()
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a professional podcast script writer."},
+            {"role": "user", "content": prompt},
+        ],
+        temperature=temperature,
+        max_tokens=max_tokens,
+    )
+    return response.choices[0].message.content.strip()
+
+
+def call_anthropic(model: str, prompt: str, temperature: float, max_tokens: int) -> str:
+    if anthropic is None:
+        raise RuntimeError("未安装 anthropic 库。")
+    client = anthropic.Anthropic()
+    response = client.messages.create(
+        model=model,
+        system="You are a professional podcast script writer.",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=max_tokens,
+        temperature=temperature,
+    )
+    parts = []
+    for block in response.content:
+        text = getattr(block, "text", None)
+        if text:
+            parts.append(text.strip())
+    return "\n".join(parts).strip()
+
+
+def call_deepseek(model: str, prompt: str, temperature: float, max_tokens: int) -> str:
+    if requests is None:
+        raise RuntimeError("未安装 requests 库。")
+    api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("DEEPSEEK_KEY")
+    if not api_key:
+        raise RuntimeError("缺少 DEEPSEEK_API_KEY。")
+    base_url = os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com").rstrip("/")
+    endpoint = f"{base_url}/v1/chat/completions"
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": "You are a professional podcast script writer."},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+    }
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    resp = requests.post(endpoint, headers=headers, json=payload, timeout=60)
+    if resp.status_code >= 400:
+        try:
+            detail = resp.json()
+        except json.JSONDecodeError:
+            detail = resp.text[:200]
+        raise RuntimeError(f"DeepSeek API 错误：HTTP {resp.status_code} {detail}")
+    data = resp.json()
+    choices = data.get("choices") or []
+    if not choices:
+        raise RuntimeError("DeepSeek 返回缺少 choices。")
+    message = choices[0].get("message") or {}
+    content = message.get("content", "").strip()
+    if not content:
+        raise RuntimeError("DeepSeek 返回内容为空。")
+    return content
+
+
+def generate_script(provider: str, model: str, prompt: str, temperature: float, max_tokens: int) -> str:
+    provider = provider.lower()
+    if provider == "openai":
+        return call_openai(model, prompt, temperature, max_tokens)
+    if provider == "anthropic":
+        return call_anthropic(model, prompt, temperature, max_tokens)
+    if provider == "deepseek":
+        return call_deepseek(model, prompt, temperature, max_tokens)
+    raise RuntimeError(f"不支持的 provider：{provider}")
+
+
+def resolve_output_path(episode_date: str, output: Optional[str]) -> Path:
+    if output:
+        return Path(output)
+    year = episode_date[:4]
+    target_dir = STAGE3_OUTPUT_DIR / episode_date
+    target_dir.mkdir(parents=True, exist_ok=True)
+    return target_dir / f"episode_{episode_date}_v1.md"
+
+
+def write_output(content: str, path: Path, overwrite: bool, print_only: bool) -> None:
+    if print_only:
+        print(content)
+        return
+    if path.exists() and not overwrite:
+        raise RuntimeError(f"目标文件已存在：{path}（使用 --overwrite 覆盖）")
+    path.write_text(content, encoding="utf-8")
+    print(f"✅ 已生成脚本：{path}")
+
+
+def main() -> None:
+    args = parse_args()
+    prompt_path, episode_date = resolve_prompt_path(args)
+    prompt = read_prompt(prompt_path)
+    try:
+        script = generate_script(args.provider, args.model, prompt, args.temperature, args.max_tokens)
+    except Exception as exc:
+        sys.stderr.write(f"❌ 脚本生成失败：{exc}\n")
+        sys.exit(1)
+
+    output_path = resolve_output_path(episode_date, args.output)
+    try:
+        write_output(script, output_path, args.overwrite, args.print_only)
+    except Exception as exc:
+        sys.stderr.write(f"❌ 写入失败：{exc}\n")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

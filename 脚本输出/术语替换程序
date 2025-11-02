@@ -1,0 +1,13 @@
+# Step1: GPT翻译
+translation = gpt4_translate(text)
+
+# Step2: 术语替换
+for term, correct in terminology_db.items():
+    translation = translation.replace(term, correct)
+
+# Step3: 人工验证专有名词（必须）
+```
+
+#### 方案B：双模型交叉验证
+```
+GPT-4翻译 → Claude检查 → 差异部分人工裁决

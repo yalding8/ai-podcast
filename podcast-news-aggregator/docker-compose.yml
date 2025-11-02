@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  rsshub:
+    image: diygod/rsshub:latest
+    container_name: podcast-rsshub
+    ports:
+      - "1200:1200"
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: redis
+      REDIS_URL: 'redis://redis:6379/'
+      CACHE_EXPIRE: 3600  # 缓存1小时
+      CACHE_CONTENT_EXPIRE: 3600
+      # 代理设置（如需要）
+      # PROXY_URI: 'http://proxy-server:port'
+      
+      # 访问控制（推荐设置）
+      # ACCESS_KEY: 'your_secret_key_here'  # 本地测试不需要密钥
+      
+      # 用户代理
+      UA: 'Mozilla/5.0 (compatible; RSSHub/1.0)'
+      PUPPETEER_CACHE_DIR: /app/.cache/puppeteer
+      PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+      
+    volumes:
+      - ./data/rsshub:/app/data
+      - ./data/puppeteer:/app/.cache/puppeteer
+    restart: unless-stopped
+    depends_on:
+      - redis
+    networks:
+      - podcast-network
+
+  redis:
+    image: redis:alpine
+    container_name: podcast-redis
+    volumes:
+      - ./data/redis:/data
+    restart: unless-stopped
+    networks:
+      - podcast-network
+
+networks:
+  podcast-network:
+    driver: bridge
+
+volumes:
+  rsshub-data:
+  redis-data:

@@ -1,0 +1,6 @@
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_01.wav'
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_02.wav'
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_03.wav'
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_04.wav'
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_05.wav'
+file '/Users/ningding/Desktop/AI POADCAST/audio_parts/chunk_06.wav'
