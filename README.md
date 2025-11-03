@@ -10,47 +10,54 @@
 - 📰 **自动采集**：RSS源、网页抓取、API集成
 - 📝 **智能提取**：LLM驱动的要点卡片生成
 - 🎙️ **脚本生成**：专业播客脚本自动创作
-- 🔊 **音频合成**：多TTS引擎支持（讯飞/火山/Edge）
+- 🔊 **音频合成**：多TTS引擎支持（讯飞/火山）
 - 🏗️ **模块化架构**：依赖注入、配置管理、易测试
 
 ## 🚀 快速开始
 
-### 安装
+### 1. 安装
 
 ```bash
-# 克隆仓库
-git clone https://github.com/yourusername/ai-poadcast.git
-cd ai-poadcast
-
-# 安装依赖
+git clone https://github.com/yalding8/ai-podcast.git
+cd ai-podcast
 pip install -e .
-
-# 可选：安装LLM和TTS支持
-pip install -e ".[llm,tts]"
 ```
 
-### 配置
+### 2. 配置
 
 ```bash
-# 复制环境变量模板
 cp .env.example .env
-
-# 编辑配置
-vim .env
+vim .env  # 配置 API 密钥
 ```
 
-### 使用
+必须配置：
+- `DEEPSEEK_API_KEY` 或 `OPENAI_API_KEY` - LLM服务
+- `VOLC_API_KEY` - 火山引擎 TTS
+
+### 3. 一键运行
 
 ```bash
-# 导入新闻
-python -m ai_poadcast.cli import \
-  --title "新闻标题" \
-  --url "https://..." \
-  --fetch
-
-# 或使用旧脚本（兼容）
-python ai_poadcast_main/import_raw_story.py --title "..." --url "..."
+make full-pipeline
 ```
+
+这会自动执行：
+1. 采集RSS新闻
+2. 提取要点卡片
+3. 生成播客脚本
+4. 合成音频
+5. 后期处理
+6. 发布RSS Feed
+
+### 4. 分步执行
+
+```bash
+make collect   # 只采集新闻
+make extract   # 只提取要点
+make script    # 只生成脚本
+make audio     # 只合成音频
+```
+
+详细安装指南见 [docs/INSTALL.md](docs/INSTALL.md)
 
 ## 📁 项目结构
 
@@ -61,55 +68,26 @@ ai_poadcast/              # 新架构（模块化）
 ├── processors/           # 内容处理（提取、校验）
 ├── generators/           # 脚本生成（Prompt、LLM）
 ├── llm/                  # LLM客户端（OpenAI、Anthropic、DeepSeek）
-├── utils/                # 工具函数
-├── config.py             # 统一配置
-└── cli.py                # 命令行入口
+└── utils/                # 工具函数
 
 ai_poadcast_main/         # 旧脚本（保持兼容）
 ├── import_raw_story.py   # 原文导入
 ├── collect_rss_feeds.py  # RSS采集
 ├── daily_workflow.py     # 每日流水线
-└── ...
+└── generate_stage3_script.py  # 脚本生成
 
 docs/                     # 文档
-├── guides/               # 使用指南
-└── archive/              # 历史文档
+├── INSTALL.md            # 安装指南
+├── ARCHITECTURE.md       # 架构设计
+└── guides/               # 使用指南
 ```
 
 ## 📖 文档
 
-- [快速入门](START_HERE.md) - 5分钟上手
-- [完整指南](README.md) - 详细操作手册
-- [重构指南](REFACTOR_GUIDE.md) - 新旧架构对比
-- [依赖注入](DEPENDENCY_INJECTION.md) - 架构设计
-- [配置管理](CONFIG_MANAGEMENT.md) - 环境配置
-
-## 🏗️ 架构亮点
-
-### 依赖注入
-
-```python
-# 旧方式：硬编码
-client = OpenAI()
-
-# 新方式：依赖注入
-from ai_poadcast.llm import create_llm_client
-from ai_poadcast.generators.script import ScriptGenerator
-
-llm = create_llm_client(provider="deepseek")
-generator = ScriptGenerator(llm)
-```
-
-### 统一配置
-
-```python
-# 旧方式：分散配置
-api_key = os.getenv("OPENAI_API_KEY")
-
-# 新方式：统一配置
-from ai_poadcast.config import settings
-api_key = settings.openai_api_key
-```
+- [安装指南](docs/INSTALL.md) - 详细安装步骤
+- [架构设计](docs/ARCHITECTURE.md) - 系统架构
+- [TTS配置](docs/guides/volcengine_tts_complete_guide.md) - 音频合成
+- [优质源](docs/guides/QUALITY_SOURCES.md) - 新闻源配置
 
 ## 🔧 工作流
 
@@ -119,9 +97,25 @@ Stage 0: 新闻采集 → Stage 1: 原文导入 → Stage 2: 要点提取
 Stage 3: 脚本生成 → Stage 4: QA审核 → Stage 5: 音频合成
 ```
 
+## 🎯 核心功能
+
+### LLM 自动切换
+当主要LLM服务不可用时，自动切换到备用服务：
+```
+DeepSeek (503) → OpenAI → Anthropic
+```
+
+### 文本过滤
+自动过滤脚本中的注释和说明：
+- 以 `#` 开头的注释行
+- `**脚本说明**` 区域
+
+### 音色选择
+默认使用北京小爷音色（情感丰富、亲切自然），可通过 `--speaker` 参数切换。
+
 ## 🤝 贡献
 
-欢迎提交Issue和Pull Request！
+欢迎提交Issue和Pull Request！详见 [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📄 许可
 
@@ -130,5 +124,5 @@ MIT License
 ## 🙏 致谢
 
 - OpenAI / Anthropic / DeepSeek - LLM支持
-- 讯飞 / 火山引擎 - TTS服务
+- 火山引擎 / 讯飞 - TTS服务
 - BeautifulSoup / Pydantic - 核心依赖
