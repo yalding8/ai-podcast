@@ -1,0 +1,205 @@
+name: Podcast Production Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: '运行阶段'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - collect
+          - extract
+          - script
+          - audio
+          - publish
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  collect-news:
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'collect'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Collect RSS feeds
+        run: python ai_poadcast_main/collect_rss_feeds.py
+      
+      - name: Crawl exam sites
+        run: python ai_poadcast_main/exam_sites_crawler.py
+      
+      - name: Upload news queue
+        uses: actions/upload-artifact@v3
+        with:
+          name: news-queue
+          path: ai_poadcast_main/news_queue.json
+
+  extract-summaries:
+    needs: collect-news
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'extract'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Download news queue
+        uses: actions/download-artifact@v3
+        with:
+          name: news-queue
+          path: ai_poadcast_main/
+      
+      - name: Extract summaries
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python ai_poadcast_main/daily_workflow.py --extract
+      
+      - name: Upload summaries
+        uses: actions/upload-artifact@v3
+        with:
+          name: summaries
+          path: ai_poadcast_main/news_queue_with_summaries.json
+
+  generate-script:
+    needs: extract-summaries
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'script'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Download summaries
+        uses: actions/download-artifact@v3
+        with:
+          name: summaries
+          path: ai_poadcast_main/
+      
+      - name: Generate script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python ai_poadcast_main/daily_workflow.py --stage3
+      
+      - name: Upload script
+        uses: actions/upload-artifact@v3
+        with:
+          name: script
+          path: 脚本输出/
+
+  synthesize-audio:
+    needs: generate-script
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'audio'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      
+      - name: Download script
+        uses: actions/download-artifact@v3
+        with:
+          name: script
+          path: 脚本输出/
+      
+      - name: Synthesize audio
+        env:
+          XUNFEI_APP_ID: ${{ secrets.XUNFEI_APP_ID }}
+          XUNFEI_API_KEY: ${{ secrets.XUNFEI_API_KEY }}
+          XUNFEI_API_SECRET: ${{ secrets.XUNFEI_API_SECRET }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          python tts_xunfei.py \
+            --text-file "脚本输出/${TODAY}/episode_${TODAY}_final.md" \
+            --output "audio_exports/$(date +%Y)/episode_${TODAY}_xiaoyan.mp3" \
+            --voice xiaoyan
+      
+      - name: Post-process audio
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          python audio_postprocess.py \
+            --input "audio_exports/$(date +%Y)/episode_${TODAY}_xiaoyan.mp3" \
+            --output "audio_exports/$(date +%Y)/episode_${TODAY}_final.mp3" \
+            --normalize-only
+      
+      - name: Upload audio
+        uses: actions/upload-artifact@v3
+        with:
+          name: audio
+          path: audio_exports/
+
+  publish-episode:
+    needs: synthesize-audio
+    if: github.event.inputs.stage == 'all' || github.event.inputs.stage == 'publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Download audio
+        uses: actions/download-artifact@v3
+        with:
+          name: audio
+          path: audio_exports/
+      
+      - name: Publish to platforms
+        env:
+          XIAOYUZHOU_API_KEY: ${{ secrets.XIAOYUZHOU_API_KEY }}
+          XIMALAYA_API_KEY: ${{ secrets.XIMALAYA_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          python auto_publish.py \
+            --audio "audio_exports/$(date +%Y)/episode_${TODAY}_final.mp3" \
+            --title "异乡早咖啡 ${TODAY}" \
+            --description "今日国际教育资讯" \
+            --platforms rss
+      
+      - name: Commit RSS feed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add audio_exports/podcast_feed.xml
+          git add ai_poadcast_main/publish_log.json
+          git commit -m "Update podcast feed $(date +%Y-%m-%d)" || echo "No changes"
+          git push

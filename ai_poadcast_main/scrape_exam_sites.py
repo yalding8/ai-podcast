@@ -6,7 +6,7 @@
 
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 from pathlib import Path
 
@@ -74,7 +74,7 @@ def scrape_site(site_name, config):
                 'published': date,
                 'tags': ['exam', site_name.lower()],
                 'priority': 9,
-                'collected_at': datetime.now().isoformat()
+                'collected_at': datetime.now(timezone.utc).isoformat()
             })
         
         except Exception as e:
@@ -103,7 +103,7 @@ def main():
             queue = {'items': []}
         
         queue['items'].extend(all_items)
-        queue['updated_at'] = datetime.now().isoformat()
+        queue['updated_at'] = datetime.now(timezone.utc).isoformat()
         queue['total'] = len(queue['items'])
         
         with open(queue_file, 'w', encoding='utf-8') as f:

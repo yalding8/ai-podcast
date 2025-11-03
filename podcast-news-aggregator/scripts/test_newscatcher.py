@@ -50,7 +50,7 @@ class NewsCatcherTester:
             print(f"❌ 连接失败: {str(e)}")
             return False
     
-    def search_education_news(self, days=1):
+    def search_education_news(self, days=30):
         """搜索国际教育新闻"""
         print("\n" + "=" * 60)
         print(f"搜索过去{days}天的国际教育新闻...")
@@ -203,7 +203,7 @@ def main():
         return False
     
     # 搜索国际教育新闻
-    tester.search_education_news(days=1)
+    tester.search_education_news(days=30)
     
     # 按国家搜索
     print("\n测试按国家搜索功能...")

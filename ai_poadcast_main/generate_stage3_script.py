@@ -49,8 +49,9 @@ def parse_args() -> argparse.Namespace:
 
 
 def resolve_prompt_path(args: argparse.Namespace) -> tuple[Path, str]:
+    from path_utils import safe_path
     if args.prompt:
-        path = Path(args.prompt)
+        path = safe_path(args.prompt, Path.cwd())
         if not path.exists():
             sys.stderr.write(f"❌ Prompt 文件不存在：{path}\n")
             sys.exit(1)
@@ -159,12 +160,25 @@ def generate_script(provider: str, model: str, prompt: str, temperature: float, 
     raise RuntimeError(f"不支持的 provider：{provider}")
 
 
-def resolve_output_path(episode_date: str, output: Optional[str]) -> Path:
+def resolve_output_path(episode_date: str, output: Optional[str], overwrite: bool) -> Path:
+    from path_utils import safe_path
     if output:
-        return Path(output)
+        return safe_path(output, Path.cwd())
     year = episode_date[:4]
     target_dir = STAGE3_OUTPUT_DIR / episode_date
     target_dir.mkdir(parents=True, exist_ok=True)
+    
+    # 如果不覆盖，自动找下一个可用版本号
+    if not overwrite:
+        version = 1
+        while True:
+            path = target_dir / f"episode_{episode_date}_v{version}.md"
+            if not path.exists():
+                return path
+            version += 1
+            if version > 99:  # 防止无限循环
+                raise RuntimeError(f"版本号超过99，请检查目录：{target_dir}")
+    
     return target_dir / f"episode_{episode_date}_v1.md"
 
 
@@ -188,7 +202,7 @@ def main() -> None:
         sys.stderr.write(f"❌ 脚本生成失败：{exc}\n")
         sys.exit(1)
 
-    output_path = resolve_output_path(episode_date, args.output)
+    output_path = resolve_output_path(episode_date, args.output, args.overwrite)
     try:
         write_output(script, output_path, args.overwrite, args.print_only)
     except Exception as exc:

@@ -9,7 +9,7 @@ import re
 import subprocess
 import urllib.error
 import urllib.request
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Optional
@@ -502,53 +502,88 @@ def extract_key_points(title: str, url: str, article_text: str,
     return _fallback_summary(article_text, reason)
 
 
+def load_skipped_urls():
+    """加载已跳过的URL列表"""
+    from path_utils import safe_path
+    from error_utils import safe_json_read
+    
+    skipped_file = safe_path("ai_poadcast_main/.skipped_urls.json", Path.cwd())
+    data = safe_json_read(skipped_file, default={})
+    
+    if isinstance(data, dict):
+        return set(data.get('urls', []))
+    return set()
+
+def save_skipped_url(url: str):
+    """保存跳过的URL"""
+    from path_utils import safe_path
+    from error_utils import safe_json_write
+    
+    skipped_file = safe_path("ai_poadcast_main/.skipped_urls.json", Path.cwd())
+    skipped_urls = load_skipped_urls()
+    skipped_urls.add(url)
+    
+    data = {
+        'updated_at': datetime.now(timezone.utc).isoformat(),
+        'urls': sorted(list(skipped_urls))
+    }
+    
+    safe_json_write(skipped_file, data)
+
 def load_queue(queue_file="ai_poadcast_main/news_queue.json",
                summaries_file: Optional[str] = None):
     """加载队列"""
-    queue_path = Path(queue_file)
+    from path_utils import safe_path
+    from error_utils import safe_json_read
+    
+    queue_path = safe_path(queue_file, Path.cwd())
     
     print(f"[DEBUG] 尝试加载队列: {queue_file}")
-    print(f"[DEBUG] 文件存在: {queue_path.exists()}")
     
-    if not queue_path.exists():
-        print(f"❌ 队列文件不存在: {queue_file}")
+    data = safe_json_read(queue_path, default={'items': []})
+    if data is None or not isinstance(data, dict):
+        print(f"❌ 队列文件加载失败: {queue_file}")
         print("💡 请先运行: python ai_poadcast_main/collect_rss_feeds.py")
         return {'items': []}
-    
-    with open(queue_path) as f:
-        data = json.load(f)
 
     items = data.get('items', [])
     print(f"[DEBUG] 加载成功，共 {len(items)} 条")
+    
+    # 过滤已跳过的URL
+    skipped_urls = load_skipped_urls()
+    if skipped_urls:
+        before = len(items)
+        items = [item for item in items if item.get('url') not in skipped_urls]
+        filtered_count = before - len(items)
+        if filtered_count > 0:
+            print(f"[DEBUG] 已过滤 {filtered_count} 条之前跳过的新闻")
+        data['items'] = items
 
     if summaries_file:
-        summaries_path = Path(summaries_file)
+        from error_utils import safe_json_read
+        summaries_path = safe_path(summaries_file, Path.cwd())
         print(f"[DEBUG] 尝试合并中文要点: {summaries_file}")
-        if summaries_path.exists():
-            try:
-                with open(summaries_path, encoding="utf-8") as f:
-                    summaries_data = json.load(f)
-            except Exception as exc:  # pragma: no cover
-                print(f"[DEBUG] 无法读取中文要点文件：{exc}")
-            else:
-                summary_lookup = {}
-                for entry in summaries_data.get("items", []):
-                    key = entry.get("url") or entry.get("title")
-                    if key:
-                        summary_lookup[key] = entry
-                merged = 0
-                for item in items:
-                    key = item.get("url") or item.get("title")
-                    summary_entry = summary_lookup.get(key)
-                    if summary_entry:
-                        if summary_entry.get("chinese_summary"):
-                            item["chinese_summary"] = summary_entry["chinese_summary"]
-                        if summary_entry.get("article_length") is not None:
-                            item["article_length"] = summary_entry["article_length"]
-                        merged += 1
-                print(f"[DEBUG] 已合并中文要点 {merged} 条")
+        
+        summaries_data = safe_json_read(summaries_path)
+        if summaries_data:
+            summary_lookup = {}
+            for entry in summaries_data.get("items", []):
+                key = entry.get("url") or entry.get("title")
+                if key:
+                    summary_lookup[key] = entry
+            merged = 0
+            for item in items:
+                key = item.get("url") or item.get("title")
+                summary_entry = summary_lookup.get(key)
+                if summary_entry:
+                    if summary_entry.get("chinese_summary"):
+                        item["chinese_summary"] = summary_entry["chinese_summary"]
+                    if summary_entry.get("article_length") is not None:
+                        item["article_length"] = summary_entry["article_length"]
+                    merged += 1
+            print(f"[DEBUG] 已合并中文要点 {merged} 条")
         else:
-            print("[DEBUG] 中文要点文件不存在，跳过合并。")
+            print("[DEBUG] 中文要点文件加载失败或不存在。")
     
     return data
 
@@ -556,19 +591,30 @@ def filter_by_keywords(items, must_include=None, must_exclude=None):
     """按关键词过滤"""
     if must_include is None:
         must_include = [
-            'visa', 'policy', 'admission', 'ranking', 'scholarship',
-            'university', 'college', 'student', 'international',
-            'tuition', 'fee', 'application', 'deadline', 'course',
-            'program', 'degree', 'master', 'phd', 'graduate',
-            'undergraduate', 'exam', 'test', 'ielts', 'toefl',
-            'immigration', 'study abroad', 'education'
+            # 核心关键词 - 高权重
+            'visa', 'immigration', 'policy', 'international student',
+            'study abroad', 'admission', 'application', 'scholarship',
+            'university ranking', 'college ranking', 'tuition',
+            # 考试相关
+            'ielts', 'toefl', 'gre', 'gmat', 'sat', 'act',
+            # 学位相关
+            'master', 'phd', 'graduate', 'undergraduate', 'mba',
+            # 地区相关
+            'uk visa', 'us visa', 'canada visa', 'australia visa',
+            # 机构相关
+            'university', 'college', 'education', 'academic'
         ]
     
     if must_exclude is None:
         must_exclude = [
-            'sport', 'football', 'basketball', 'celebrity',
-            'entertainment', 'gossip', 'fashion', 'beauty',
-            'recipe', 'cooking', 'game', 'gaming'
+            # 明确排除的内容
+            'sport', 'football', 'basketball', 'celebrity', 'entertainment',
+            'gossip', 'fashion', 'beauty', 'recipe', 'cooking', 'game', 'gaming',
+            # 低质量内容
+            'weather', 'traffic', 'local news', 'obituary', 'crime',
+            # 非教育相关
+            'real estate', 'property', 'investment', 'stock market',
+            'cryptocurrency', 'bitcoin', 'trading'
         ]
     
     print(f"[DEBUG] 开始关键词过滤，输入 {len(items)} 条")
@@ -578,16 +624,14 @@ def filter_by_keywords(items, must_include=None, must_exclude=None):
     }
     source_keyword_rules = {
         "UK GOV Education": [
-            "international",
-            "overseas",
-            "global",
-            "visa",
-            "immigration",
-            "foreign",
-            "abroad",
             "international student",
             "overseas student",
-            "international teacher",
+            "international education",
+            "visa",
+            "immigration",
+            "foreign student",
+            "study abroad",
+            "international recruitment",
         ],
     }
     
@@ -659,9 +703,9 @@ def import_story(item, dry_run=False):
         print("  ✅ 导入成功")
         return True
     except subprocess.CalledProcessError as e:
-        if "URL already exists" in e.stderr:
+        if "URL already exists" in e.stderr or "该 URL 已经存档" in e.stderr:
             print("  ⚠️  已存在，跳过")
-            return False
+            return True  # 返回True避免中断流程
         else:
             print(f"  ❌ 导入失败: {e.stderr[:100]}")
             return False
@@ -728,6 +772,12 @@ def interactive_review(items, max_import=10, translator=None):
         print(f"来源: {item['source']}")
         print(f"标题: {item['title']}")
         print(f"URL: {item['url']}")
+        
+        published_date = item.get('published_date') or _extract_iso_date(item.get('published', ''))
+        if published_date:
+            print(f"发布日期: {published_date}")
+        else:
+            print(f"发布日期: 未知")
 
         cn_summary = item.get('chinese_summary')
         if cn_summary:
@@ -756,7 +806,8 @@ def interactive_review(items, max_import=10, translator=None):
                 skipped_count += 1
         elif choice == 'n':
             skipped_count += 1
-            print("  ⏭️  已跳过")
+            save_skipped_url(item['url'])
+            print("  ⏭️  已跳过（已记录，下次不再显示）")
         elif choice == 's':
             print("\n🛑 停止审核")
             break
@@ -771,6 +822,7 @@ def interactive_review(items, max_import=10, translator=None):
                     skipped_count += 1
             else:
                 skipped_count += 1
+                save_skipped_url(item['url'])
         elif choice == 'q':
             print("\n👋 退出")
             return

@@ -1,6 +1,6 @@
 {
-  "run_at": "2025-11-02T14:15:11",
-  "total_items": 43,
+  "run_at": "2025-11-03T05:13:33+00:00",
+  "total_items": 55,
   "sources": {
     "ICEF Monitor": {
       "status": "success",
@@ -12,9 +12,24 @@
     "The PIE News": {
       "status": "success",
       "rss": "https://thepienews.com/feed/",
+      "raw_new_items": 1,
+      "final_items": 1,
+      "priority": 10
+    },
+    "Study International": {
+      "status": "success",
+      "rss": "https://www.studyinternational.com/feed/",
+      "raw_new_items": 7,
+      "final_items": 7,
+      "priority": 10
+    },
+    "University World News": {
+      "status": "error",
+      "rss": "https://www.universityworldnews.com/rss/pf_rss.php",
       "raw_new_items": 0,
       "final_items": 0,
-      "priority": 10
+      "priority": 10,
+      "reason": "fetch/parse failed"
     },
     "IELTS Official": {
       "status": "skipped",
@@ -32,211 +47,62 @@
       "priority": 9,
       "reason": "requires scraper"
     },
-    "Duolingo English Test": {
-      "status": "skipped",
-      "rss": "",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 8,
-      "reason": "requires scraper"
-    },
-    "Times Higher Education": {
-      "status": "error",
-      "rss": "https://www.timeshighereducation.com/news.rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 8,
-      "reason": "fetch/parse failed"
-    },
-    "QS Rankings News": {
+    "QS Top Universities": {
       "status": "success",
-      "rss": "https://news.google.com/rss/search?q=QS+university+rankings&hl=en-US&gl=US&ceid=US:en",
-      "raw_new_items": 1,
-      "final_items": 1,
-      "priority": 7
+      "rss": "https://www.topuniversities.com/rss.xml",
+      "raw_new_items": 7,
+      "final_items": 6,
+      "priority": 9
     },
     "USCIS Newsroom": {
       "status": "success",
       "rss": "https://www.uscis.gov/rss.xml",
-      "raw_new_items": 0,
-      "final_items": 0,
+      "raw_new_items": 2,
+      "final_items": 2,
       "priority": 10
     },
     "UK Visas and Immigration": {
       "status": "success",
       "rss": "https://www.gov.uk/government/organisations/uk-visas-and-immigration.atom",
-      "raw_new_items": 15,
-      "final_items": 14,
+      "raw_new_items": 2,
+      "final_items": 2,
       "priority": 10
-    },
-    "IRCC Newsroom": {
-      "status": "error",
-      "rss": "https://www.canada.ca/en/immigration-refugees-citizenship.atom",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 10,
-      "reason": "fetch/parse failed"
-    },
-    "Australian Department of Home Affairs": {
-      "status": "error",
-      "rss": "https://www.homeaffairs.gov.au/news-media/archive/rss.xml",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 9,
-      "reason": "fetch/parse failed"
-    },
-    "Chevening Scholarships": {
-      "status": "error",
-      "rss": "https://www.chevening.org/feed/",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 9,
-      "reason": "fetch/parse failed"
     },
     "UK GOV Education": {
       "status": "success",
       "rss": "https://www.gov.uk/government/organisations/department-for-education.atom",
-      "raw_new_items": 19,
-      "final_items": 18,
-      "priority": 9
+      "raw_new_items": 3,
+      "final_items": 3,
+      "priority": 7
     },
-    "UCAS": {
-      "status": "skipped",
-      "rss": "",
+    "College Board": {
+      "status": "error",
+      "rss": "https://newsroom.collegeboard.org/rss",
       "raw_new_items": 0,
       "final_items": 0,
       "priority": 8,
-      "reason": "requires scraper"
-    },
-    "Inside Higher Ed": {
-      "status": "error",
-      "rss": "https://www.insidehighered.com/news.rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
       "reason": "fetch/parse failed"
     },
     "NAFSA News": {
       "status": "success",
       "rss": "https://news.google.com/rss/search?q=NAFSA+international+students&hl=en-US&gl=US&ceid=US:en",
-      "raw_new_items": 0,
-      "final_items": 0,
+      "raw_new_items": 20,
+      "final_items": 20,
       "priority": 7
-    },
-    "Study in Australia": {
-      "status": "skipped",
-      "rss": "",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "requires scraper"
-    },
-    "Universities Canada": {
-      "status": "skipped",
-      "rss": "",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "requires scraper"
-    },
-    "中国教育部留学服务中心": {
-      "status": "skipped",
-      "rss": "",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 8,
-      "reason": "requires scraper"
-    },
-    "Education New Zealand": {
-      "status": "error",
-      "rss": "https://www.enz.govt.nz/news-and-research/news-and-events/rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 8,
-      "reason": "fetch/parse failed"
-    },
-    "Campus France": {
-      "status": "error",
-      "rss": "https://www.campusfrance.org/en/rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
-    },
-    "DAAD": {
-      "status": "error",
-      "rss": "https://www.daad.de/en/the-daad/news/news/rss.xml",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
-    },
-    "Singapore Ministry of Education": {
-      "status": "error",
-      "rss": "https://www.moe.gov.sg/rss/press-releases",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
-    },
-    "University of Cambridge": {
-      "status": "error",
-      "rss": "https://www.cam.ac.uk/news/rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
-    },
-    "MIT News": {
-      "status": "error",
-      "rss": "https://news.mit.edu/rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
-    },
-    "University of Toronto": {
-      "status": "error",
-      "rss": "https://www.utoronto.ca/news/rss.xml",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 7,
-      "reason": "fetch/parse failed"
     },
     "Google News - International Education": {
       "status": "success",
       "rss": "https://news.google.com/rss/search?q=international+students+study+abroad+visa&hl=en-US&gl=US&ceid=US:en",
-      "raw_new_items": 1,
-      "final_items": 1,
+      "raw_new_items": 10,
+      "final_items": 10,
       "priority": 6
-    },
-    "Google News - University Rankings": {
-      "status": "success",
-      "rss": "https://news.google.com/rss/search?q=university+rankings+QS+THE&hl=en-US&gl=US&ceid=US:en",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 5
-    },
-    "r/gradadmissions": {
-      "status": "success",
-      "rss": "https://www.reddit.com/r/gradadmissions/top/.rss?t=week",
-      "raw_new_items": 4,
-      "final_items": 4,
-      "priority": 5
-    },
-    "r/ApplyingToCollege": {
-      "status": "success",
-      "rss": "https://www.reddit.com/r/ApplyingToCollege/top/.rss?t=week",
-      "raw_new_items": 5,
-      "final_items": 5,
-      "priority": 5
     },
     "World Education Services (WENR)": {
       "status": "success",
       "rss": "https://wenr.wes.org/feed",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 6
+      "raw_new_items": 4,
+      "final_items": 4,
+      "priority": 8
     },
     "ApplyBoard Insights": {
       "status": "success",
@@ -244,22 +110,6 @@
       "raw_new_items": 0,
       "final_items": 0,
       "priority": 6
-    },
-    "QS Insights Magazine": {
-      "status": "error",
-      "rss": "https://www.qs.com/insights-magazine/feed/",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 5,
-      "reason": "fetch/parse failed"
-    },
-    "World Bank Education": {
-      "status": "error",
-      "rss": "https://blogs.worldbank.org/education/rss",
-      "raw_new_items": 0,
-      "final_items": 0,
-      "priority": 6,
-      "reason": "fetch/parse failed"
     }
   }
 }

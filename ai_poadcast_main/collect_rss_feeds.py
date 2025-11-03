@@ -7,7 +7,7 @@ RSS 批量采集器
 import json
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 from urllib.parse import urlparse
@@ -16,7 +16,21 @@ import feedparser
 import requests
 
 # 导入配置
-from feeds_config import TIER_1_SOURCES, TIER_2_SOURCES, TIER_3_SOURCES
+try:
+    from feeds_config import TIER_1_SOURCES, TIER_2_SOURCES, TIER_3_SOURCES
+except ImportError:
+    import sys
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    try:
+        from config import RSS_SOURCES
+        TIER_1_SOURCES = {k: v for k, v in RSS_SOURCES.items() if v.get('priority', 0) >= 9}
+        TIER_2_SOURCES = {k: v for k, v in RSS_SOURCES.items() if 7 <= v.get('priority', 0) < 9}
+        TIER_3_SOURCES = {k: v for k, v in RSS_SOURCES.items() if v.get('priority', 0) < 7}
+    except ImportError:
+        TIER_1_SOURCES = {}
+        TIER_2_SOURCES = {}
+        TIER_3_SOURCES = {}
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -64,21 +78,23 @@ def generate_slug(title):
 
 def load_seen_urls():
     """加载已采集的URL列表"""
-    index_file = Path("source_archive/_index.json")
-    if index_file.exists():
-        with open(index_file, encoding='utf-8') as f:
-            data = json.load(f)
-            if isinstance(data, dict):
-                sources = data.get('sources', [])
-            elif isinstance(data, list):
-                sources = data
-            else:
-                sources = []
-            return {item['url'] for item in sources if isinstance(item, dict) and item.get('url')}
-    return set()
+    from path_utils import safe_path
+    from error_utils import safe_json_read
+    
+    index_file = safe_path("source_archive/_index.json", Path.cwd())
+    data = safe_json_read(index_file, default=[])
+    
+    if isinstance(data, dict):
+        sources = data.get('sources', [])
+    elif isinstance(data, list):
+        sources = data
+    else:
+        sources = []
+    
+    return {item['url'] for item in sources if isinstance(item, dict) and item.get('url')}
 
 def _record_failure(source: str, rss_url: str, stage: str, error: str) -> None:
-    timestamp = datetime.now().isoformat(timespec="seconds")
+    timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     FAILURE_RECORDS.append({
         "timestamp": timestamp,
         "source": source,
@@ -100,27 +116,20 @@ def _record_failure(source: str, rss_url: str, stage: str, error: str) -> None:
 
 
 def _request_feed(source: str, rss_url: str, retries: int = 3, backoff: float = 3.0) -> Optional[requests.Response]:
+    from error_utils import safe_http_get
+    
     headers = {
         "User-Agent": "Mozilla/5.0 (RSS Collector)",
         "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.1",
     }
-    attempt = 0
-    while attempt < retries:
-        try:
-            response = requests.get(rss_url, headers=headers, timeout=20)
-            response.raise_for_status()
-            return response
-        except requests.RequestException as exc:
-            attempt += 1
-            if attempt >= retries:
-                error_text = str(exc)
-                print(f"  ❌ RSS请求失败: {error_text}")
-                _record_failure(source, rss_url, "request", error_text)
-            else:
-                wait = backoff * attempt
-                print(f"  ⚠️ 请求失败（第{attempt}次），{wait:.1f}s 后重试…")
-                time.sleep(wait)
-    return None
+    
+    response = safe_http_get(rss_url, timeout=20, max_retries=retries, headers=headers)
+    if response is None:
+        error_text = f"RSS请求失败，已重试{retries}次"
+        print(f"  ❌ {error_text}")
+        _record_failure(source, rss_url, "request", error_text)
+    
+    return response
 
 
 def _clean_html(text: str) -> str:
@@ -197,10 +206,12 @@ def fetch_rss(source_name, config, seen_urls, min_age_hours=0):
         return []
     
     new_items = []
-    cutoff_time = datetime.now() - timedelta(hours=min_age_hours) if min_age_hours > 0 else None
+    cutoff_time = datetime.now(timezone.utc) - timedelta(hours=min_age_hours) if min_age_hours > 0 else None
     
-    # 🔧 新增：Google News限制条数
-    max_items = 10 if 'Google News' in source_name else 20
+    if config.get('max_items') is not None:
+        max_items = int(config['max_items'])
+    else:
+        max_items = 10 if 'Google News' in source_name else 20
     
     collected = 0
     for entry in feed.entries:
@@ -231,7 +242,7 @@ def fetch_rss(source_name, config, seen_urls, min_age_hours=0):
             'summary': entry.get('summary', '')[:200],
             'tags': config.get('tags', []),
             'priority': config.get('priority', 5),
-            'collected_at': datetime.now().isoformat()
+            'collected_at': datetime.now(timezone.utc).isoformat()
         })
         collected += 1
     
@@ -244,20 +255,24 @@ def fetch_rss(source_name, config, seen_urls, min_age_hours=0):
 
 def save_queue(items, output_file="ai_poadcast_main/news_queue.json"):
     """保存到待处理队列"""
-    output_path = Path(output_file)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    from path_utils import safe_path
+    from error_utils import safe_json_write
+    
+    output_path = safe_path(output_file, Path.cwd())
     
     # 按优先级排序
     items.sort(key=lambda x: x['priority'], reverse=True)
     
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump({
-            'updated_at': datetime.now().isoformat(),
-            'total': len(items),
-            'items': items
-        }, f, ensure_ascii=False, indent=2)
+    data = {
+        'updated_at': datetime.now(timezone.utc).isoformat(),
+        'total': len(items),
+        'items': items
+    }
     
-    print(f"\n💾 已保存 {len(items)} 条新闻到队列: {output_path}")
+    if safe_json_write(output_path, data):
+        print(f"\n💾 已保存 {len(items)} 条新闻到队列: {output_path}")
+    else:
+        print(f"\n❌ 保存队列失败: {output_path}")
 
 def main():
     """主流程"""
@@ -273,7 +288,7 @@ def main():
     # 采集
     all_items = []
     for name, config in all_sources.items():
-        items = fetch_rss(name, config, seen_urls, min_age_hours=48)  # 只要48小时内的
+        items = fetch_rss(name, config, seen_urls, min_age_hours=0)  # 不限制时间
         all_items.extend(items)
     
     if all_items:
@@ -323,7 +338,7 @@ def main():
         print("\n⚠️  没有发现新内容")
 
     summary_payload = {
-        "run_at": datetime.now().isoformat(timespec='seconds'),
+        "run_at": datetime.now(timezone.utc).isoformat(timespec='seconds'),
         "total_items": len(all_items),
         "sources": RUN_SUMMARY,
     }
@@ -335,7 +350,7 @@ def main():
     if FAILURE_RECORDS:
         with FAIL_LOG_PATH.open('a', encoding='utf-8') as logf:
             logf.write("\n" + "=" * 80 + "\n")
-            logf.write(f"Run at {datetime.now().isoformat(timespec='seconds')}\n")
+            logf.write(f"Run at {datetime.now(timezone.utc).isoformat(timespec='seconds')}\n")
             for record in FAILURE_RECORDS:
                 logf.write(
                     f"[{record['timestamp']}] stage={record['stage']} | source={record['source']}\n"

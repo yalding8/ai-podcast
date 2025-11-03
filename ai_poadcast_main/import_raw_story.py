@@ -186,7 +186,8 @@ def read_text(source: str) -> str:
         if sys.stdin.isatty():
             return ""
         return sys.stdin.read()
-    path = Path(source)
+    from path_utils import safe_path
+    path = safe_path(source, PROJECT_ROOT)
     if not path.exists():
         sys.stderr.write(f"❌ 找不到文本文件：{source}\n")
         sys.exit(1)
@@ -267,10 +268,11 @@ def parse_date(value: Optional[str], field_name: str) -> Optional[date]:
 
 
 def determine_slug(custom_slug: Optional[str], title: str, archive_date: str) -> str:
+    from path_utils import safe_path
     base = custom_slug or slugify(title)
     if not base:
         base = f"article-{archive_date}"
-    raw_dir = SOURCE_ARCHIVE_DIR / archive_date
+    raw_dir = safe_path(SOURCE_ARCHIVE_DIR / archive_date, PROJECT_ROOT)
     raw_dir.mkdir(parents=True, exist_ok=True)
     slug = base
     counter = 2

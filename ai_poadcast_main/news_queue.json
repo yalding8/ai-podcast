@@ -1,48 +1,146 @@
 {
-  "updated_at": "2025-11-02T14:15:11.562407",
-  "total": 43,
+  "updated_at": "2025-11-03T05:13:33.662742+00:00",
+  "total": 55,
   "items": [
     {
-      "title": "Guidance: Register of licensed sponsors: students",
-      "url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-students",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "List of institutions licensed to sponsor migrant students under the Student and Child Student routes.",
+      "title": "Sanchari Sen Rai, ECC Hive",
+      "url": "https://thepienews.com/sanchari-sen-rai-ecc-hive/",
+      "source": "The PIE News",
+      "published": "Fri, 31 Oct 2025 09:39:49 +0000",
+      "summary": "<p>This week, The PIE sat down with CEO and co-founder of ECC Hive Sanchari Sen Rai to talk about her favourite international education conference and why she'd like to pick up Spanish.</p>\n<p>The pos",
       "tags": [
-        "uk",
-        "visa",
-        "policy"
+        "policy",
+        "institution",
+        "market"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.188956"
+      "collected_at": "2025-11-03T05:12:59.896272+00:00"
     },
     {
-      "title": "Guidance: Pakistan: country policy and information notes",
-      "url": "https://www.gov.uk/government/publications/pakistan-country-policy-and-information-notes",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Guidance used by UK Visas and Immigration to make decisions in asylum and human rights applications.",
+      "title": "Stetson University: Providing Top Academics and Many Pathways to Success",
+      "url": "https://studyinternational.com/news/stetson-university-providing-top-academics-and-many-pathways-to-success/",
+      "source": "Study International",
+      "published": "Fri, 31 Oct 2025 11:27:44 +0000",
+      "summary": "At Stetson University, international students live, learn, and thrive together on a campus with over 60 nationalities represented.",
       "tags": [
-        "uk",
-        "visa",
-        "policy"
+        "policy",
+        "institution",
+        "student"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.188972"
+      "collected_at": "2025-11-03T05:13:03.585014+00:00"
     },
     {
-      "title": "Guidance: Tanzania: tuberculosis test clinics for a UK visa",
-      "url": "https://www.gov.uk/government/publications/tuberculosis-test-for-a-uk-visa-clinics-in-tanzania",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Where to get tested for tuberculosis (TB) in Tanzania for your UK visa application.",
+      "title": "No shortcuts to success: A look at the longest degrees in the world",
+      "url": "https://studyinternational.com/news/longest-degrees-in-the-world/",
+      "source": "Study International",
+      "published": "Fri, 31 Oct 2025 08:45:17 +0000",
+      "summary": "The rewards are worth it though.",
       "tags": [
-        "uk",
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585033+00:00"
+    },
+    {
+      "title": "Bentley University: Business degrees for the innovation age",
+      "url": "https://studyinternational.com/news/bentley-university-business-degrees-for-the-innovation-age/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 09:47:52 +0000",
+      "summary": "At Bentley University, business education meets technology. Learn how its STEM programmes prepare you for success in a digital, data-driven world.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585047+00:00"
+    },
+    {
+      "title": "African-American student gets 14k views for YouTube video about her first week studying in Malaysia",
+      "url": "https://studyinternational.com/news/youtube-video-malaysia-study-abroad/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 09:11:31 +0000",
+      "summary": "The comment section is flooded with support and advice.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585053+00:00"
+    },
+    {
+      "title": "Advancing at Texas A&M University: From graduate degrees to global success",
+      "url": "https://studyinternational.com/news/advancing-at-texas-am-university-from-graduate-degrees-to-global-success/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 04:54:17 +0000",
+      "summary": "Texas A&#038;M’s College of Architecture blends evidence-based design, hands-on makerspaces, and global ties to prepare master’s graduates for impactful careers.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585059+00:00"
+    },
+    {
+      "title": "Spend 24 hours in Montreal, Quebec with an international student",
+      "url": "https://studyinternational.com/news/24-hours-in-montreal-intern/",
+      "source": "Study International",
+      "published": "Wed, 29 Oct 2025 12:06:58 +0000",
+      "summary": "A day in the life of a Malaysian in Montreal.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585066+00:00"
+    },
+    {
+      "title": "Where Nordic values meet global ambition: inside the Copenhagen MBA",
+      "url": "https://studyinternational.com/news/where-nordic-values-meet-global-ambition-inside-the-copenhagen-mba/",
+      "source": "Study International",
+      "published": "Wed, 29 Oct 2025 11:41:22 +0000",
+      "summary": "Copenhagen Business School’s Full-Time MBA blends Nordic values, sustainability. and people-centred leadership.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585072+00:00"
+    },
+    {
+      "title": "Revised Form I-129 Now Available",
+      "url": "https://www.uscis.gov/archive/revised-form-i-129-now-available",
+      "source": "USCIS Newsroom",
+      "published": "Fri, 09 Jan 2015 16:10:44 +0000",
+      "summary": "<span>Revised Form I-129 Now Available</span>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span>rdrake</span></span>\n<span class=\"field field--name-created fie",
+      "tags": [
+        "us",
         "visa",
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.188987"
+      "collected_at": "2025-11-03T05:13:16.201077+00:00"
+    },
+    {
+      "title": "Newsroom",
+      "url": "https://www.uscis.gov/newsroom",
+      "source": "USCIS Newsroom",
+      "published": "Fri, 12 Apr 2013 12:14:04 +0000",
+      "summary": "<span>Newsroom</span>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span>admin</span></span>\n<span class=\"field field--name-created field--type-created field--l",
+      "tags": [
+        "us",
+        "visa",
+        "policy"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:16.201109+00:00"
     },
     {
       "title": "Migration transparency data",
@@ -56,133 +154,7 @@
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.188997"
-    },
-    {
-      "title": "Guidance: Immigration status checks: guidance for banks and building societies",
-      "url": "https://www.gov.uk/government/publications/immigration-status-checks-guidance-for-banks",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Guidance for banks and building societies on carrying out immigration status checks on current account holders and applicants.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189006"
-    },
-    {
-      "title": "Form: Apply for asylum support: form ASF1",
-      "url": "https://www.gov.uk/government/publications/application-for-asylum-support-form-asf1",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Form for destitute asylum applicants and failed asylum seekers to apply for support.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189015"
-    },
-    {
-      "title": "Guidance: Information booklet for asylum applications",
-      "url": "https://www.gov.uk/government/publications/information-leaflet-for-asylum-applications",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Information booklet for those who have registered, or are considering registering, an asylum application in the UK.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189023"
-    },
-    {
-      "title": "Guidance: Form AN: guidance",
-      "url": "https://www.gov.uk/government/publications/form-an-guidance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "How to apply for citizenship by naturalisation if you are living in the UK.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189032"
-    },
-    {
-      "title": "Guidance: Home Office Gaza process: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/home-office-gaza-process-caseworker-guidance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "For Home Office personnel conducting security checks and delivering the visa process for Gaza medical evacuations (medevacs) and Gaza scholarship students.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189041"
-    },
-    {
-      "title": "Guidance: Language analysis: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/language-analysis-instruction",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on the language analysis process used by the Home Office, how it is accessed and when it should be used to establish place of origin.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189050"
-    },
-    {
-      "title": "Guidance: Family life and exceptional circumstances: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/family-life-as-a-partner-or-parent-private-life-and-exceptional-circumstance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on considering claims based on family life (as a partner or parent) or exceptional circumstances.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189060"
-    },
-    {
-      "title": "Guidance: Administrative review: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/administrative-review",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on processing applications for an administrative review.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189077"
-    },
-    {
-      "title": "Apply for a Parent of a Child Student visa: step by step",
-      "url": "https://www.gov.uk/apply-parent-child-student-visa",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Parent of a Child Student visa - prepare supporting documents, apply, book and attend an appointment, what happens at the UK border",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189087"
+      "collected_at": "2025-11-03T05:13:18.675178+00:00"
     },
     {
       "title": "Check your electronic travel authorisation (ETA)",
@@ -196,7 +168,147 @@
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T14:11:19.189101"
+      "collected_at": "2025-11-03T05:13:18.675261+00:00"
+    },
+    {
+      "title": "How Future17 gave me a new perspective on sustainability",
+      "url": "https://www.topuniversities.com/student-info/student-stories/how-future17-gave-me-new-perspective-sustainability",
+      "source": "QS Top Universities",
+      "published": "Fri, 31 Oct 2025 11:20:51 +0000",
+      "summary": "<h1>How Future17 gave me a new perspective on sustainability </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"username\" hre",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013231+00:00"
+    },
+    {
+      "title": "Rome Business School",
+      "url": "https://www.topuniversities.com/universities/rome-business-school/undergrad",
+      "source": "QS Top Universities",
+      "published": "Fri, 31 Oct 2025 09:06:20 +0000",
+      "summary": "<h1>Rome Business School</h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"username\" href=\"https://www.topuniversities.com/us",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013258+00:00"
+    },
+    {
+      "title": "Tashkent State University of Oriental Studies - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/tashkent-state-university-oriental-studies-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Tashkent State University of Oriental Studies - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n          ",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013268+00:00"
+    },
+    {
+      "title": "Chirchik State Pedagogical University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/chirchik-state-pedagogical-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Chirchik State Pedagogical University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                  ",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013277+00:00"
+    },
+    {
+      "title": "Caspian University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/caspian-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Caspian University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"use",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013286+00:00"
+    },
+    {
+      "title": "Abay Myrzakhmetov Kokshetau University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/abay-myrzakhmetov-kokshetau-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Abay Myrzakhmetov Kokshetau University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                 ",
+      "tags": [
+        "ranking",
+        "admission",
+        "student"
+      ],
+      "priority": 9,
+      "collected_at": "2025-11-03T05:13:15.013302+00:00"
+    },
+    {
+      "title": "International Student Mobility Data Sources: A Primer",
+      "url": "https://wenr.wes.org/2025/08/student-mobility-data-sources-part-1",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 22 Aug 2025 19:37:14 +0000",
+      "summary": "<p>In utilizing any global student mobility data source, it is crucial to understand some basics about each source. Here are some key questions to ask about any source and how to understand what each ",
+      "tags": [
+        "global",
+        "research",
+        "policy"
+      ],
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884215+00:00"
+    },
+    {
+      "title": "Rebuilding Syria’s Education System: Navigating Challenges and Embracing Opportunities",
+      "url": "https://wenr.wes.org/2025/03/rebuilding-syrias-education-system-navigating-challenges-and-embracing-opportunities",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 14 Mar 2025 13:11:56 +0000",
+      "summary": "<p>The Syrian conflict has disrupted education for millions, threatening a generation’s future. Now, with the fall of the Assad regime, there is a critical opportunity to rebuild and reform the educat",
+      "tags": [
+        "global",
+        "research",
+        "policy"
+      ],
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884228+00:00"
+    },
+    {
+      "title": "Insights on Global Academic Credential Trends: An Interview with Ari Mihael, Director of Educational Standards at WES",
+      "url": "https://wenr.wes.org/2025/03/insights-on-global-academic-credential-trends-an-interview-with-ari-mihael-director-of-educational-standards-at-wes",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 07 Mar 2025 17:56:51 +0000",
+      "summary": "<p>Ari Mihael, Director of Educational Standards at WES, discusses how digital document transmission has revolutionized academic credential evaluations.</p>\n<p>The post <a href=\"https://wenr.wes.org/2",
+      "tags": [
+        "global",
+        "research",
+        "policy"
+      ],
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884233+00:00"
+    },
+    {
+      "title": "Navigating Change: Hans de Wit on the Future of International Higher Education",
+      "url": "https://wenr.wes.org/2025/01/navigating-change-hans-de-wit-on-the-future-of-international-higher-education",
+      "source": "World Education Services (WENR)",
+      "published": "Wed, 29 Jan 2025 16:18:46 +0000",
+      "summary": "<p>Hans de Wit, a leading expert in international higher education, shares his insights on navigating global challenges and the evolving landscape of academic mobility. </p>\n<p>The post <a href=\"https",
+      "tags": [
+        "global",
+        "research",
+        "policy"
+      ],
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884241+00:00"
     },
     {
       "title": "Children’s social work workforce census: guide to submitting data",
@@ -206,11 +318,10 @@
       "summary": "How local authorities should collect and submit data to complete the children’s social work workforce census.",
       "tags": [
         "uk",
-        "policy",
-        "visa"
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224095"
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:19.922087+00:00"
     },
     {
       "title": "Guidance: Further education: initial teacher education",
@@ -220,11 +331,10 @@
       "summary": "Information for providers of initial teacher education (ITE) for the further education (FE) sector.",
       "tags": [
         "uk",
-        "policy",
-        "visa"
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224121"
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:19.922128+00:00"
     },
     {
       "title": "Guidance: Expert advisory group on further education (FE) teacher training and development",
@@ -234,362 +344,410 @@
       "summary": "Membership and details of an expert advisory group on teacher training and development in further education.",
       "tags": [
         "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224135"
-    },
-    {
-      "title": "Guidance: School census 2025 to 2026: technical information",
-      "url": "https://www.gov.uk/government/publications/school-census-2025-to-2026-technical-information",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Technical specification and validation rules for submitting 2025 to 2026 school census data.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224146"
-    },
-    {
-      "title": "School business professionals: training and development",
-      "url": "https://www.gov.uk/guidance/school-resource-management-training-and-support",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Sources of training and development for school business professionals (SBPs) in schools and trusts.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224164"
-    },
-    {
-      "title": "Research: National Education Nature Park: process evaluation",
-      "url": "https://www.gov.uk/government/publications/national-education-nature-park-process-evaluation",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "A summary of implementation of the National Education Nature Park programme during its first 2 years of delivery.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224175"
-    },
-    {
-      "title": "Research: Developing a competency framework for effective assistive technology training",
-      "url": "https://www.gov.uk/government/publications/developing-a-competency-framework-for-effective-assistive-technology-training",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Examines the skills and knowledge needed by staff in special schools and colleges to use digital assistive technology effectively.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224187"
-    },
-    {
-      "title": "Research: Effective multi-agency working with assistive technology",
-      "url": "https://www.gov.uk/government/publications/effective-multi-agency-working-with-assistive-technology",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Findings from research exploring how different agencies collaborate in providing and implementing assistive technology.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224198"
-    },
-    {
-      "title": "Transparency data: DfE and executive agency ePCS spend over £500: 2025 to 2026",
-      "url": "https://www.gov.uk/government/publications/dfe-and-executive-agency-epcs-spend-over-500-2025-to-2026",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Spending by electronic purchasing card solution (ePCS) over £500 in the 2025 to 2026 financial year.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224215"
-    },
-    {
-      "title": "Transparency data: Disclosure of civil servant roles and salary information",
-      "url": "https://www.gov.uk/government/publications/disclosure-of-scs-posts-and-salary-information",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Information on roles and salaries for members of the Department for Education (DfE) and its arm’s length bodies (ALBs).",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224226"
-    },
-    {
-      "title": "Research: Early years financial incentives: evaluation report",
-      "url": "https://www.gov.uk/government/publications/early-years-financial-incentives-evaluation-report",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Report on the 2024 to 2025 early years financial incentives (EYFI) pilot",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224236"
-    },
-    {
-      "title": "Transparency data: Teachers’ pension scheme payments: 2025 to 2026",
-      "url": "https://www.gov.uk/government/publications/teachers-pension-scheme-payments-2025-to-2026",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Teachers’ pension scheme payments made on behalf of the Department for Education (DfE) in the 2025 to 2026 financial year.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224247"
-    },
-    {
-      "title": "Transparency data: Independent schools: applications, changes and closures",
-      "url": "https://www.gov.uk/government/publications/independent-schools-applications-changes-and-closures",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Number of independent school applications, changes and closures processed by the Department for Education (DfE).",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224257"
-    },
-    {
-      "title": "Transparency data: Initial teacher training application reports: monthly statistics",
-      "url": "https://www.gov.uk/government/publications/initial-teacher-training-application-reports-monthly-statistics",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Find the latest monthly statistics on initial teacher training (ITT) recruitment.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224278"
-    },
-    {
-      "title": "Research: Pulse surveys of childcare and early years providers",
-      "url": "https://www.gov.uk/government/publications/pulse-surveys-of-childcare-and-early-years-providers",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Research reports of the results from the childcare and early years provider pulse surveys.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224288"
-    },
-    {
-      "title": "Research: Teacher development programmes: theory of change",
-      "url": "https://www.gov.uk/government/publications/teacher-development-programmes-theory-of-change",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Research report including a theory of change model for the department’s recent teacher development programmes.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224299"
-    },
-    {
-      "title": "Research: Delayed school admissions for summer-born pupils: 2025",
-      "url": "https://www.gov.uk/government/publications/delayed-school-admissions-for-summer-born-pupils-2025",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Surveys of local authorities and of parents and carers of summer-born children requesting delayed admission to reception.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224309"
-    },
-    {
-      "title": "Transparency data: Independent schools: warning notices and enforcement letters",
-      "url": "https://www.gov.uk/government/publications/independent-schools-warning-notices",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Schools currently failing to meet the independent school standards.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T14:12:51.224319"
-    },
-    {
-      "title": "NSU recognized among top online universities for 2026 - cnhinews.com",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2tGaU9iTDZEc283UUNHUWVsUGRoSS1tS09uc2JiWEdPYjZ0LUFEb2NzNmUzYWJ4TUZaMUVHVlRSdmZxdXVxUzJtOU9pbXN4RUd1TjRJdURPbEdRM2s4UG9PdGV4aTF3eDlQRjV0NXFnS1p2Um1sdXlqTENVdzlhamt1aWdJNjRRV3VsMXFPc0JPQQ",
-      "source": "QS Rankings News",
-      "published": "Fri, 31 Oct 2025 21:33:36 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2tGaU9iTDZEc283UUNHUWVsUGRoSS1tS09uc2JiWEdPYjZ0LUFEb2NzNmUzYWJ4TUZaMUVHVlRSdmZxdXVxUzJtOU9pbXN4RUd1TjRJdURPbEdRM2s4UG9PdGV4aTF3eDlQRjV0NX",
-      "tags": [
-        "ranking"
+        "policy"
       ],
       "priority": 7,
-      "collected_at": "2025-11-02T14:11:15.794113"
+      "collected_at": "2025-11-03T05:13:19.922144+00:00"
     },
     {
-      "title": "Australia Tightens Student Intake; Indian Dreams of Studying Abroad at Risk - Times Now",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSnpBVjJNVWZCanhKV3lheHE5N0VzT3lYV1QzN3dseW9PU2RSWGIwNGlBdzhibEQyaWhJUXdJOUk2dFBLSHZrcXpfNlB6RjZCOThtVkdnbmRjcGJwNmFKMHgxTmpEVDZfN0MxdzZPTF9Ob3l1Q1NjS0NRWkJDQlpSVkY3bWRlMzhtY0Utek4yYTJ1MHFmLXdVVXphSFptVzR2TG5ORVpsbkpJV3IwSlFZUWwzSlpoc2dqQ3FQeWlkYmxkYmtnRzFJZmlmRHc0b19IZUROWndMNGlnV2kwLTY5RWgtckp3QVJXQlpHaG1qVElCN03SAfgBQVVfeXFMUEI4MXphS3BYZUhPYnJSSW1FSHplcVBBclRMSHpKM1RTNzBlZmRybmpMLUNPMUtJSzNPN0MtRGdwRFB1Sm1rS3RTancySTN6c29BYTNlUUZuT3lFLTc4ZzBhY1NjWFVIaUI0Z0ZQY09aT1NHYTUxZDdhWjBVSWFnd1ZzU2pYVk5yVHZmZEFGcF80NjFBYzQwT3JpekcwbnI2NmY2b1h5U3Y3aXhOMDNDRmVYQUdxT2MyN0Z4NFFfamlHZmRlWXpfYlZzb1FCVENjWTdFMGE2QU1lOEw4OS1Oc1NITFZsVUlBaEEzYVJTcUxCZFl0bEw1NjQ",
+      "title": "Seton Hall’s Johanna Pan-Carr Honored With Prestigious NAFSA Distinguished Service Award - Seton Hall University",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOelI2NmtwTnhTVlZOSVBmNHoxTTRXVXh6MjBwbWt5SVhMRW50bnF4XzlyZXQtT2FiV2tJLS01NS05RWtDbU0yVlFRZEl6elB3ajctdFVxM2hyNnowb2tLZ1JnVTJhQ3phTlZ1SWl1U0JnWkxyUFE5NHZrT2dyWTZtaFdNa1B0UXJsVzdBUkVHZ0dzSEYyNUdsaWtDYUp0Qk9IVUxmUkd3LWNSRllPZllnMkFn",
+      "source": "NAFSA News",
+      "published": "Wed, 29 Oct 2025 15:02:56 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOelI2NmtwTnhTVlZOSVBmNHoxTTRXVXh6MjBwbWt5SVhMRW50bnF4XzlyZXQtT2FiV2tJLS01NS05RWtDbU0yVlFRZEl6elB3ajctdFVxM2hyNnowb2tLZ1JnVTJhQ3phTlZ1SWl1U0",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962388+00:00"
+    },
+    {
+      "title": "Texas universities could see fewer international students amid immigration crackdown, reports say - The Texas Tribune",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMjZyQUNXV2Q3Rm5WSHVtUEJKZ3BvZkMzS2VtSHNWQnFzcXJxWXE2WW4tOHlWZkJLcU9RUkN3LTVDWG5tUXh5UDFSU2RGc2tGOG9LLTNEVnVHcWQ2YTh3dkE5clQyTXExMjZtNEkxMlVfclZ0R2g0LXExaEZSMjNOdzgweXRSWkJWbktwNnNXTHB1T1hROGNB",
+      "source": "NAFSA News",
+      "published": "Tue, 26 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPMjZyQUNXV2Q3Rm5WSHVtUEJKZ3BvZkMzS2VtSHNWQnFzcXJxWXE2WW4tOHlWZkJLcU9RUkN3LTVDWG5tUXh5UDFSU2RGc2tGOG9LLTNEVnVHcWQ2YTh3dkE5clQyTXExMjZtNEkxMl",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962404+00:00"
+    },
+    {
+      "title": "US could face $7bn loss from international student decline - The PIE News",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5oTmJuMUFHbll5c1BWQUdnVUN4ZzM5Z3VpWnd6cmFiMHgwUkpnbEhzR0lUdlhOU0dTZ2tyb0U3THp6OC15NnpmMkR4bktxbTJiaHFNV0RrU2I1YmU1ZmRpTFZ5ZFhkbEUzVk1EOWNhLVVQVlB5ZTZObl9aQUc",
+      "source": "NAFSA News",
+      "published": "Tue, 29 Jul 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE5oTmJuMUFHbll5c1BWQUdnVUN4ZzM5Z3VpWnd6cmFiMHgwUkpnbEhzR0lUdlhOU0dTZ2tyb0U3THp6OC15NnpmMkR4bktxbTJiaHFNV0RrU2I1YmU1ZmRpTFZ5ZFhkbEUzVk1EOWNhLV",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962411+00:00"
+    },
+    {
+      "title": "150K fewer international students this fall? That’s what one analysis predicts. - Higher Ed Dive",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeHRzT0x2SWxfNEdGYmdoNVNHdURGSTZqZklCVFU1RWtLbEtHc29rZzFnRmdZWEQzdENtakZKT3VWbjdSX0o0bE5YVGxxTW85dUtnNGl2aGNFMEhZZ3YwNGJDZVlFQy1TSmp5dmpHUHJfOGE3a1RQTjVtT3cwYzFyeHJPUUtOYUpSTVYtOVIyNkRnVTRDOGp3",
+      "source": "NAFSA News",
+      "published": "Fri, 01 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOeHRzT0x2SWxfNEdGYmdoNVNHdURGSTZqZklCVFU1RWtLbEtHc29rZzFnRmdZWEQzdENtakZKT3VWbjdSX0o0bE5YVGxxTW85dUtnNGl2aGNFMEhZZ3YwNGJDZVlFQy1TSmp5dmpHUH",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962418+00:00"
+    },
+    {
+      "title": "NAFSA fears US$7 billion loss for US HE from policy impact - StudyTravel Network",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zdVZmclE5dXhNSUhkdVZQWTRxY1hZM3ZfZGFaT3JudGl0YjdBQVY4ekt2WHB4LTRSd1p2X2hmT0RJc3ZaUHNhNVN0WnloanNJNldtYmRmMVZJZnQ3cHc",
+      "source": "NAFSA News",
+      "published": "Wed, 06 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zdVZmclE5dXhNSUhkdVZQWTRxY1hZM3ZfZGFaT3JudGl0YjdBQVY4ekt2WHB4LTRSd1p2X2hmT0RJc3ZaUHNhNVN0WnloanNJNldtYmRmMVZJZnQ3cHc?oc=5\" target=\"_blank\">",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962424+00:00"
+    },
+    {
+      "title": "These states have the most international college students - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE00MFl0U0E3WDR5TEZoTEp6NlVPdTlHRkNYSlhHYnFGcnhWb0pXblVWSXplN2lObVpFME82dXI4ZC1oQmFCTVFiSEpGajByX0paeFpIMnNXUXZ5YnhVQzczYnlwYzZCX0JGZTdrc1gycXpOSVc1ZzU0OVJR",
+      "source": "NAFSA News",
+      "published": "Tue, 03 Jun 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE00MFl0U0E3WDR5TEZoTEp6NlVPdTlHRkNYSlhHYnFGcnhWb0pXblVWSXplN2lObVpFME82dXI4ZC1oQmFCTVFiSEpGajByX0paeFpIMnNXUXZ5YnhVQzczYnlwYzZCX0JGZTdrc1gycX",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962430+00:00"
+    },
+    {
+      "title": "By the numbers: A look at international students at Harvard and across the U.S. - NPR",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcnBWTkNZV09RbXV0Q3AzVV80Nm5ud0lNUTlRSEE3VUp5LVdSal9sY21rUmlhQ0lQUzBXYkdyRWNTaEQwYUxNdS1qdUtSUGUzQVF1YnkxSENYdjZIUExfcTlQLTAxcFhGRG9VWDhGUEM3QlB2aFFhOE5IWS11X0RvRDFTUWMxNFRnVFh1bEpTOU5STkg3SnFyMWdMRmlhQQ",
+      "source": "NAFSA News",
+      "published": "Sat, 24 May 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxPcnBWTkNZV09RbXV0Q3AzVV80Nm5ud0lNUTlRSEE3VUp5LVdSal9sY21rUmlhQ0lQUzBXYkdyRWNTaEQwYUxNdS1qdUtSUGUzQVF1YnkxSENYdjZIUExfcTlQLTAxcFhGRG9VWDhGUE",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962437+00:00"
+    },
+    {
+      "title": "Declining international student enrollment sucks money out of the economy - marketplace.org",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVG9JdjZ4R0MtSVBUVkJabEpnQ0dkT241UjZWaTZEUGZzd2l1QkZIODJ4YjM1NzVldVlRSnRZWVhteWN3RG44NTJRdmlIRUZNZVQyQkNqUE5ZTXhidGxWeld6M0ZHUzBJWmRSUW5Ma0YtNDhwX1RjbEVBNnhodHlVV3VnQkhNYXJWVml2N1c3Vy1sSnF5TkZCZC1pdGRZNXc1U1IxSW1n",
+      "source": "NAFSA News",
+      "published": "Wed, 06 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOVG9JdjZ4R0MtSVBUVkJabEpnQ0dkT241UjZWaTZEUGZzd2l1QkZIODJ4YjM1NzVldVlRSnRZWVhteWN3RG44NTJRdmlIRUZNZVQyQkNqUE5ZTXhidGxWeld6M0ZHUzBJWmRSUW5Ma0",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962443+00:00"
+    },
+    {
+      "title": "When Crisis Comes to Campus - AAC&U",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CZFRQdm9UYUlNOE12d01kN1VULXhsMU5FbFJXVGdVTjhPbmtWa1dLQ0xzQ0NiY3FMWnZUc3V0dGNVTjhrWTNCb2dNdVd3ZXMzMkYycV9TZzhYR0RyWnA3OVVJNWhrQUpkMXVBa1BtZXcwblhScXJpbXJCSW1CX0E",
+      "source": "NAFSA News",
+      "published": "Wed, 17 Sep 2025 18:59:46 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1CZFRQdm9UYUlNOE12d01kN1VULXhsMU5FbFJXVGdVTjhPbmtWa1dLQ0xzQ0NiY3FMWnZUc3V0dGNVTjhrWTNCb2dNdVd3ZXMzMkYycV9TZzhYR0RyWnA3OVVJNWhrQUpkMXVBa1BtZX",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962449+00:00"
+    },
+    {
+      "title": "[UPDATE] Higher Ed Community Urges Administration to Reforge Partnership - Quorum",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaEVWUV9tdW5zUnF6TmVSc1F4dFVlY0dBU0tMb1FfbzlQal9DODQ5UDF5REIzVFczR3hUemFwZUU3X0dHQnc4TkR1VnYwSnE5MEpCMXFYQ2o3Yjd5bk85aTBNRU9HYWV6Um9XcmZqLXVmME0yT0ZNWThTcGsyOWI2akNXYU9DRU82enRjWHdFYndRUVFsdzQ5Wlh1SFg",
+      "source": "NAFSA News",
+      "published": "Tue, 28 Oct 2025 22:46:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNaEVWUV9tdW5zUnF6TmVSc1F4dFVlY0dBU0tMb1FfbzlQal9DODQ5UDF5REIzVFczR3hUemFwZUU3X0dHQnc4TkR1VnYwSnE5MEpCMXFYQ2o3Yjd5bk85aTBNRU9HYWV6Um9XcmZqLX",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962455+00:00"
+    },
+    {
+      "title": "US: Study estimates that changes to international student policies could reduce GDP by up to US$481 billion per year - ICEF Monitor",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTTFnMWpENTNXaklmQ0RQU1k5WVFtUUhtRV9XRGtNc3laTzhIRlJwQTlkMG9iaDdpeF9iTWJidVNmZHNNMXY0OWJ6ZlFlOFZ3MzhjaVFxeDJURzEzd3BXN0RfdHNmWkhvcVFjREJCLTBmTDNDZFNYSFNoOVdVcVdsNGtIX2dUSURjRWRfM1RfVHduelY0SU84clIxSEdXVTJDd0RaN1N6YXBmUzIydWQxZ2VGWlQ4WklBY0RWc1AyTVB4dnhyNGVNbUQzUk9vaV9LOHdkU0tnYU1yQjN0aEdmUlFB",
+      "source": "NAFSA News",
+      "published": "Thu, 30 Oct 2025 16:38:53 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4gFBVV95cUxQTTFnMWpENTNXaklmQ0RQU1k5WVFtUUhtRV9XRGtNc3laTzhIRlJwQTlkMG9iaDdpeF9iTWJidVNmZHNNMXY0OWJ6ZlFlOFZ3MzhjaVFxeDJURzEzd3BXN0RfdHNmWkhvcVFjREJCLT",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962461+00:00"
+    },
+    {
+      "title": "International Enrollment Could Drop By 150,000 Students, Report Warns - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZ2NRM2VGX3RtZHpFQmp6VGU4NTRNd3FwYnlHQm00WHVoanhyNTZpTmFxYmVXV1JMWnE2QWkwS3oyZFZOV3o3ZnZGNmhYVGlia0RpODY4d2RhMjdaSEtmczFHZDhMUl9oZF83NTFkUTZtMFlhMWdXRkdmS2dIUmkyNHN2UkV4OTZFSkVJQUk3MnVBZHJ1WWY0OUstMUdzY1JhaTJYT1JzSjVtRjE2QTlETVBGUm1LUzNncy0wb0pfaWlrNllGeWNja3FDUQ",
+      "source": "NAFSA News",
+      "published": "Sun, 03 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxPZ2NRM2VGX3RtZHpFQmp6VGU4NTRNd3FwYnlHQm00WHVoanhyNTZpTmFxYmVXV1JMWnE2QWkwS3oyZFZOV3o3ZnZGNmhYVGlia0RpODY4d2RhMjdaSEtmczFHZDhMUl9oZF83NTFkUT",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962468+00:00"
+    },
+    {
+      "title": "Colleges Across the U.S. Fear Chill on Enrollments of Foreign Students - The Chronicle of Higher Education",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQb19tUGxqWUUyRllucVJzMnpVc21Wd2hoS0Zma08zbHBZM2ZBSGNsOFlhTlA5M0g2U0JpZHRuUjFjaGhuUl9INjBPcjh5SEg1QnFBQW42NmdEUS1mblphSXhNTV9kY1d1RHp2M0ZsOFdyVUw2R0lJYldfZDVWbkV3TmY2TV9PbmVkNVhWb2hkd01zbEt5RHlfUF9KamZZNDc2",
+      "source": "NAFSA News",
+      "published": "Wed, 28 May 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQb19tUGxqWUUyRllucVJzMnpVc21Wd2hoS0Zma08zbHBZM2ZBSGNsOFlhTlA5M0g2U0JpZHRuUjFjaGhuUl9INjBPcjh5SEg1QnFBQW42NmdEUS1mblphSXhNTV9kY1d1RHp2M0ZsOF",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962477+00:00"
+    },
+    {
+      "title": "US Colleges Could Lose Up to 150K International Students This Year Amid Trump Crackdown - Common Dreams",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5obUN0U1AyZktINkJQcHpLOG44RnY0cmFNOTVfMmdfZnlRNEIwVVlSOG52YmNVQU0yS0NXdXNtTFV2VDJwcHQxUXBBVEd2UXpFU2VzMmx6UEtZLVlndGF4R0NLMzRkaUNtMmcwYW5WVG5pRVQ1UUpNdw",
+      "source": "NAFSA News",
+      "published": "Tue, 05 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE5obUN0U1AyZktINkJQcHpLOG44RnY0cmFNOTVfMmdfZnlRNEIwVVlSOG52YmNVQU0yS0NXdXNtTFV2VDJwcHQxUXBBVEd2UXpFU2VzMmx6UEtZLVlndGF4R0NLMzRkaUNtMmcwYW5WVG",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962483+00:00"
+    },
+    {
+      "title": "International Students Pour Billions of Dollars Into the Economy. We Can't Afford to Lose Them. | US News Opinion - U.S. News & World Report",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQ0c5VE9TOVF2VjZCVXBWYUpEVkZxcnhPMnpBMmRlQnBWbHFfaWJaUlBBNzJpWWNEN3RPZjZsdS1nc1NOUVpnNEhVT3BmZFhLbzJhSGdQd2lZRFJMeFBrSkRMdGpTTmt4SEhaN2o1bGt6YzBCLWE0LUdZbUduN3BfNlAxeF9ITUxqanQ5RE1vVE13UDVXR2VVOFIyNA",
+      "source": "NAFSA News",
+      "published": "Mon, 29 Sep 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOQ0c5VE9TOVF2VjZCVXBWYUpEVkZxcnhPMnpBMmRlQnBWbHFfaWJaUlBBNzJpWWNEN3RPZjZsdS1nc1NOUVpnNEhVT3BmZFhLbzJhSGdQd2lZRFJMeFBrSkRMdGpTTmt4SEhaN2o1bG",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962489+00:00"
+    },
+    {
+      "title": "ISU, IWU and Heartland international student enrollment is down, following national trend - WGLT",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRkhpNWhyNWhZWG5Zek1zeEw3MU04Z1AtSGI4MjFHYUd1VktBSkdSSGxnNGVNaTRnbldPWGZNN05pdi1jc3hvQ1lTUkl5NUF6QVFDUE5leUtMbzg0VmZLWjQtLTIzLVRFVzR2SFdKbmJGS3dBbUx0Mkhpbk84cVFZSTIybjdLSHl0RXhpMDZMOEhNdGZSWF9Yd0JraWdPRHIwQVVSZWNCcENIY2RidXZKVkV0c01qc1VNVWNycFZwSzFLdw",
+      "source": "NAFSA News",
+      "published": "Mon, 04 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRkhpNWhyNWhZWG5Zek1zeEw3MU04Z1AtSGI4MjFHYUd1VktBSkdSSGxnNGVNaTRnbldPWGZNN05pdi1jc3hvQ1lTUkl5NUF6QVFDUE5leUtMbzg0VmZLWjQtLTIzLVRFVzR2SFdKbm",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962495+00:00"
+    },
+    {
+      "title": "Washington state gets a $918M lift from international students - Axios",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYnA0QzJjdUY4UzZDN0pHZW1TeWwxeTdFZERBQTgwalhRVXZLTkJXNTZ2OC1pNFZFWWVGSnYybHFBTVN1Q1ZUZUp3U1BTcW9JOE54TGkyOGJfUTJoSko4eHN2dWdBZWtxWE9pcnVrdFdQV1lPMERXcnNzal9iS2kzdm1idHc2SUlhdk12MUdkSDVGWmtFVmIxR1lSVGk",
+      "source": "NAFSA News",
+      "published": "Tue, 03 Jun 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOYnA0QzJjdUY4UzZDN0pHZW1TeWwxeTdFZERBQTgwalhRVXZLTkJXNTZ2OC1pNFZFWWVGSnYybHFBTVN1Q1ZUZUp3U1BTcW9JOE54TGkyOGJfUTJoSko4eHN2dWdBZWtxWE9pcnVrdF",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962501+00:00"
+    },
+    {
+      "title": "US: International commencements could drop by 30-40% this September - ICEF Monitor",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSnphcUpWTDBqU1h0TkRpS25UUjNTMktldVlyUEpQaktCalNwWnVvT080UmMtMTU3WkExeXZCb09ranZtNDNOampuNGppX3ZrSlo2RWdVYlMybVRVZDBldWdIV1E1YThVQUFWbGVnOU4zR1hCbkQyTHlET1lwUnBNTkFFdkpvc0laR0NCQzBqMEFrMmhXMmRiZ2owNm9DczVj",
+      "source": "NAFSA News",
+      "published": "Wed, 30 Jul 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxNSnphcUpWTDBqU1h0TkRpS25UUjNTMktldVlyUEpQaktCalNwWnVvT080UmMtMTU3WkExeXZCb09ranZtNDNOampuNGppX3ZrSlo2RWdVYlMybVRVZDBldWdIV1E1YThVQUFWbGVnOU",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962507+00:00"
+    },
+    {
+      "title": "Student visa restrictions could cost Louisiana universities millions - Axios",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRmYzRGEzSkhzd1lGMVNQdGJRVmF3bmFOZnFLSkxuLWZGVUNLbW1veHFNMXZSX2FiRjhBcHl0UXhqVVVaeGx1S085SkRqSjNsTGctcXo3OWtzNm0zUURSY2pVV2lEV3Z1cXJZZ1lZMkdNdlVBZU9DQmE3Z3psZXkyT1p1alZjblZEek80TnEyWUdXd2ItODFGbHpYc3ZydC1X",
+      "source": "NAFSA News",
+      "published": "Mon, 02 Jun 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQRmYzRGEzSkhzd1lGMVNQdGJRVmF3bmFOZnFLSkxuLWZGVUNLbW1veHFNMXZSX2FiRjhBcHl0UXhqVVVaeGx1S085SkRqSjNsTGctcXo3OWtzNm0zUURSY2pVV2lEV3Z1cXJZZ1lZMk",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962512+00:00"
+    },
+    {
+      "title": "The cost of losing Virginia's international students - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmRVSi1BLS1SdDlST0VHNHkyNGwzQW5BVVN3aG80dms3aWNUX1hvTEp1VzIwaHFya1NjUmxMT28xbHVrQ3B6Mzdia3NCclc0QXA0Y0c4OUJVM2tyNjVjNlJaV3h1RE9MNl9sVVJGZjZYeExUaVdjQmdsX2o5MzZ6UWk5Mk4xdzA0T3c2OFFSTHFUeFotZlM2dFZvYW1FNnRpR1E",
+      "source": "NAFSA News",
+      "published": "Fri, 22 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmRVSi1BLS1SdDlST0VHNHkyNGwzQW5BVVN3aG80dms3aWNUX1hvTEp1VzIwaHFya1NjUmxMT28xbHVrQ3B6Mzdia3NCclc0QXA0Y0c4OUJVM2tyNjVjNlJaV3h1RE9MNl9sVVJGZj",
+      "tags": [
+        "us",
+        "immigration",
+        "policy"
+      ],
+      "priority": 7,
+      "collected_at": "2025-11-03T05:13:27.962518+00:00"
+    },
+    {
+      "title": "How to Pick Between Travel Credit Cards for Students for Study Abroad - NerdWallet",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOHhNV1VsQlpFS1R3NEZuYWRseUg1NnhVQnpxSm8wQ0xHdnkzU1ZROXRoMnl1bHBvaXVrcjJWNVhBZWMySnNyYmtrLWR4VFBOSDdrTXdWNEQ3djVETzI2Q3ZCT3FrSzRKQjlpai1IWlBCY0hhcmNLZ0NJM2dWWkhYam5B",
       "source": "Google News - International Education",
-      "published": "Sat, 01 Nov 2025 09:53:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxOSnpBVjJNVWZCanhKV3lheHE5N0VzT3lYV1QzN3dseW9PU2RSWGIwNGlBdzhibEQyaWhJUXdJOUk2dFBLSHZrcXpfNlB6RjZCOThtVkdnbmRjcGJwNmFKMHgxTmpEVDZfN0MxdzZPTF",
+      "published": "Fri, 31 Oct 2025 16:24:21 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQOHhNV1VsQlpFS1R3NEZuYWRseUg1NnhVQnpxSm8wQ0xHdnkzU1ZROXRoMnl1bHBvaXVrcjJWNVhBZWMySnNyYmtrLWR4VFBOSDdrTXdWNEQ3djVETzI2Q3ZCT3FrSzRKQjlpai1IWl",
       "tags": [
         "general"
       ],
       "priority": 6,
-      "collected_at": "2025-11-02T14:14:33.106779"
+      "collected_at": "2025-11-03T05:13:30.464090+00:00"
     },
     {
-      "title": "Demoralizing conversation with a potential supervisor",
-      "url": "https://www.reddit.com/r/gradadmissions/comments/1olnay7/demoralizing_conversation_with_a_potential/",
-      "source": "r/gradadmissions",
-      "published": "2025-11-01T13:03:56+00:00",
-      "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/gradadmissions/comments/1olnay7/demoralizing_conversation_with_a_potential/\"> <img alt=\"Demoralizing conversation with a potential supervisor\" src=\"h",
+      "title": "I Just Finished a Life-Changing Semester Abroad. But Thanks to Trump’s Policies, I’m Afraid Other Students Won’t Have the Same Opportunity. - New American Economy",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaTFVZmJaVEZoaUh0MlYxc2JrTUlxMVhtY0tSM25rbkdiQjVxRndIcm1neWh4VFM0NHhoSy10NnNfYTJSNXpzU3lxbXJtZVJ5cllmUEUyRFBheWVISFplZjlnRzhVM0wxekZiZzVMbzhLUDYtVXBENXQ2SndTZHp0c2dQenB4UVlrcklWaGktZDZma2E5OUYzdQ",
+      "source": "Google News - International Education",
+      "published": "Fri, 11 Jul 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOaTFVZmJaVEZoaUh0MlYxc2JrTUlxMVhtY0tSM25rbkdiQjVxRndIcm1neWh4VFM0NHhoSy10NnNfYTJSNXpzU3lxbXJtZVJ5cllmUEUyRFBheWVISFplZjlnRzhVM0wxekZiZzVMbz",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:37.352559"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464110+00:00"
     },
     {
-      "title": "A Quck Brief on Requesting LORs.",
-      "url": "https://www.reddit.com/r/gradadmissions/comments/1okzu28/a_quck_brief_on_requesting_lors/",
-      "source": "r/gradadmissions",
-      "published": "2025-10-31T16:51:52+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>When sending an email request, only send the ask and not a packet of information.</p> <p>The process might look something like this:</p> <ol> <li>Send a short LOR req",
+      "title": "International students in California grapple with fear of deportation, visa applications - EdSource",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNS3dORElXNldIOTZaclpjRnFVb3FZLTAtc3J0UnBtWVVpZmxhcGJmSWt4WXNxWWlLYzZwR2pYYXZmVHZKRjF2V3dIRWRPT01ObU9yY2FkZVAteGQ5WVJZUTU3QzhjVjlyb1A2bUVORzVEd2N0d3ZGdTQtR1RwVl9Ob1NRSTItckNlWmpCTHVqWUpKc0x6aXRzM2xQQ0lsXzQ0WVFoaWJyazZta1E0R1lkYUxzdW9DN3dBbUg2Ng",
+      "source": "Google News - International Education",
+      "published": "Thu, 02 Oct 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNS3dORElXNldIOTZaclpjRnFVb3FZLTAtc3J0UnBtWVVpZmxhcGJmSWt4WXNxWWlLYzZwR2pYYXZmVHZKRjF2V3dIRWRPT01ObU9yY2FkZVAteGQ5WVJZUTU3QzhjVjlyb1A2bUVORz",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:37.352571"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464118+00:00"
     },
     {
-      "title": "Encouragement for those who are starting the application process",
-      "url": "https://www.reddit.com/r/gradadmissions/comments/1olra7n/encouragement_for_those_who_are_starting_the/",
-      "source": "r/gradadmissions",
-      "published": "2025-11-01T15:53:11+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Last year at this time, I was just starting to apply to mental health counseling programs. I chose seven schools and spent Nov-Jan working on my applications. Long st",
+      "title": "International student arrivals to the US fall by 19% - The PIE News",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRDZ1SGlQVFZ4cENaenJYLVI5a3lhUVRxY05QWHZBVmhuT00xNEZ2dmpGT0ZnRE5FT0ZzeFl0ZC1WRWgtM0FYdzZiYU5VdWlTRXZDVkxuY3c5TjZKS3gwVTFueWo1aXdZZTVTODZ0anJvclZMTXMxX2tFVXB1SVpDaw",
+      "source": "Google News - International Education",
+      "published": "Thu, 09 Oct 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNRDZ1SGlQVFZ4cENaenJYLVI5a3lhUVRxY05QWHZBVmhuT00xNEZ2dmpGT0ZnRE5FT0ZzeFl0ZC1WRWgtM0FYdzZiYU5VdWlTRXZDVkxuY3c5TjZKS3gwVTFueWo1aXdZZTVTODZ0an",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:37.352578"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464125+00:00"
     },
     {
-      "title": "My masters thesis is not going too well and my advisor is very disappointed, should I give up on a PhD (CS, USA)",
-      "url": "https://www.reddit.com/r/gradadmissions/comments/1ol1kur/my_masters_thesis_is_not_going_too_well_and_my/",
-      "source": "r/gradadmissions",
-      "published": "2025-10-31T17:58:04+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello, I’m in an international masters student in my final semester at a T30 Uni. My advisor liked my initial thesis idea, but the apparatus at the lab didn’t work as",
+      "title": "As Trump Pushes International Students Away, Asian Schools Scoop Them Up - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRTE5LVRtdDlMYnBnMjl2NkRWbGFVS0lTSFhPaXhXYzlvSWdqYUJLVkZRMnVFZUpOUnBMcVZvTk5lWUd3WjRhQTJvSXhnZ2hWaVYzRVVldDBPR0VwVG90elV5MWpHWlZGa3JPQ1FWZ1VVNlpHNFNITTF0T1FoQjRidDBIUnhWVnM",
+      "source": "Google News - International Education",
+      "published": "Sat, 16 Aug 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPRTE5LVRtdDlMYnBnMjl2NkRWbGFVS0lTSFhPaXhXYzlvSWdqYUJLVkZRMnVFZUpOUnBMcVZvTk5lWUd3WjRhQTJvSXhnZ2hWaVYzRVVldDBPR0VwVG90elV5MWpHWlZGa3JPQ1FWZ1",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:37.352582"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464131+00:00"
     },
     {
-      "title": "My mom said she went to the wrong college, and I already submitted",
-      "url": "https://www.reddit.com/r/ApplyingToCollege/comments/1ol9sv8/my_mom_said_she_went_to_the_wrong_college_and_i/",
-      "source": "r/ApplyingToCollege",
-      "published": "2025-10-31T23:46:31+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>My mother told me she got an Associate's in Applied Sciences from Georgia Tech, and I took her at her word for it. Such a program does not exist. It turns out that sh",
+      "title": "UA program in London targets international students amid US visa uncertainty - azcentral.com and The Arizona Republic",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQLVU1TnlxdzJRTlhzdG9scElBeXJQYmJzX2NSZ3lsYmlDU0VGeEJnVnpnTThnU2g4c0owWUpQX0RRQ0p3MWVOZzBNZUhKVkwxV1FQbUFPZDJKdm5Ia0tiRWEwTmVEeXdBbUVxSjNPbDF2YTZBVjh2T2g3akVjVE9jM0FjOGRjbUZpamhaSVpBaUJVa1hOTTFVcUM3N25OeHNHbFRCazF1VnBYRUtXWDd0MXZhUUxJdDdxTnY2Nk51bjZjcDNWY3JVMG1XVFNiVUxadnJtQWduVzNIQnNRZ2o0TmItRzRUNzNTMHc",
+      "source": "Google News - International Education",
+      "published": "Wed, 25 Jun 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxQLVU1TnlxdzJRTlhzdG9scElBeXJQYmJzX2NSZ3lsYmlDU0VGeEJnVnpnTThnU2g4c0owWUpQX0RRQ0p3MWVOZzBNZUhKVkwxV1FQbUFPZDJKdm5Ia0tiRWEwTmVEeXdBbUVxSjNPbD",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:39.126043"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464138+00:00"
     },
     {
-      "title": "did YOU wait until the last day to submit your early apps? READ THIS!",
-      "url": "https://www.reddit.com/r/ApplyingToCollege/comments/1olktzc/did_you_wait_until_the_last_day_to_submit_your/",
-      "source": "r/ApplyingToCollege",
-      "published": "2025-11-01T10:50:39+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>happy late halloween everyone!! i know y'all were LOCKED IN yesterday instead of going out and it's all about to pay off very soon‼️</p> <p>today, as you all know, is",
+      "title": "Trump administration pauses new student visa interviews amid Harvard standoff, international student arrests - NBC News",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOczM1SFZEQ2JUZFdsSVdjUFNJVXJfcWZYbmFla0t4S05BR2hFVlp3VGpCb2huQm8tb0o1aW5pS2FnUUhaTENGd0pyVnlNUmw0NFhlTS1GZzN6andqY0lHTjhpT2N5MU5FZ2JualI0alVtVGlGZXF6VHk1aVVhSnV0SExlYnJLaWlyU0l2RmZXMklmekl0bFhReGV0bzZxUXJqMy1kV3Vn0gFWQVVfeXFMTk9Cb0dhbk9wTkN2VFRSZms3NU11N3o4bGx0TTI5UUxlYXhLQTRBZXl2c0ZOMC1EV01oZ0JaRUZKalJHbGY1TEVjcEJPN0hzcnQyX3VJZ0E",
+      "source": "Google News - International Education",
+      "published": "Wed, 28 May 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOczM1SFZEQ2JUZFdsSVdjUFNJVXJfcWZYbmFla0t4S05BR2hFVlp3VGpCb2huQm8tb0o1aW5pS2FnUUhaTENGd0pyVnlNUmw0NFhlTS1GZzN6andqY0lHTjhpT2N5MU5FZ2JualI0al",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:39.126066"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464144+00:00"
     },
     {
-      "title": "Anyone else feel jealous when parents post on here?",
-      "url": "https://www.reddit.com/r/ApplyingToCollege/comments/1olwah0/anyone_else_feel_jealous_when_parents_post_on_here/",
-      "source": "r/ApplyingToCollege",
-      "published": "2025-11-01T19:13:07+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>In my entire life, I've never received help with anything school-related ever. Not in elementary school, not in college applications. I've learned everything from boo",
+      "title": "Targeted abroad and shunned at home: Chinese overseas students caught in limbo - CNN",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSlY5a0F5MEhmcC04WFRTNTlXaEF2V21iQXBPS1FMLUlvWk1Dc0s2cnZFN2V4MGtPdHF2TWo2RDNkVTBCR0J1ejJSdGMyMTMzM1RCZlZWSUJGYTRHMDlfbVFRdUd6R0d4Z3QyRVNBb2N4ZXpTUHltZlBtWUNLREdmTUc3SQ",
+      "source": "Google News - International Education",
+      "published": "Fri, 12 Sep 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxPSlY5a0F5MEhmcC04WFRTNTlXaEF2V21iQXBPS1FMLUlvWk1Dc0s2cnZFN2V4MGtPdHF2TWo2RDNkVTBCR0J1ejJSdGMyMTMzM1RCZlZWSUJGYTRHMDlfbVFRdUd6R0d4Z3QyRVNBb2",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:39.126072"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464150+00:00"
     },
     {
-      "title": "devastated after UChicago SSEN rejection",
-      "url": "https://www.reddit.com/r/ApplyingToCollege/comments/1olczu6/devastated_after_uchicago_ssen_rejection/",
-      "source": "r/ApplyingToCollege",
-      "published": "2025-11-01T02:31:51+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>I got rejected from UChicago (my dream school for the past 3 years) for ED0. I'm so devastated. I feel like I had a near perfect application (applying for art/english",
+      "title": "How to navigate the US student visa process - Times Higher Education",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOMmVuWEhIQVJKNFZSMjFuNm0yemEyMkpuVWh3aUdMT1ozblJBdGlHUHJtSkpqeG1meENialFuQUtCb25lbmZ3UXdCMUk0dm5Ec1FBbDNHand1YjlWc3hFa1ljZmVqS2dRN2NzbXBjM2JYc2RSeDVUNU16b2gxSDVxdlFTRmk3VFVFLVEta2k2WS1Jdw",
+      "source": "Google News - International Education",
+      "published": "Thu, 05 Jun 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxOMmVuWEhIQVJKNFZSMjFuNm0yemEyMkpuVWh3aUdMT1ozblJBdGlHUHJtSkpqeG1meENialFuQUtCb25lbmZ3UXdCMUk0dm5Ec1FBbDNHand1YjlWc3hFa1ljZmVqS2dRN2NzbXBjM2",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:39.126090"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464156+00:00"
     },
     {
-      "title": "My mom is the MVP 😭",
-      "url": "https://www.reddit.com/r/ApplyingToCollege/comments/1om18zm/my_mom_is_the_mvp/",
-      "source": "r/ApplyingToCollege",
-      "published": "2025-11-01T22:40:17+00:00",
-      "summary": "<!-- SC_OFF --><div class=\"md\"><p>6 Nov 1 EA's submitted. The past week was so hectic, have done nothing except artend final webinars, send emails to faculty, and write supps. I barely ate but my mom ",
+      "title": "A Global Education Shake-Up: US Sees A Drastic Drop In Indian Students As China Grows Stronger, Fueling A New Era Of Study Abroad Preferences - Travel And Tour World",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQeS1XLXpUd3N0RXF2UTh4MEZLeUVVWnA4WklDSUVfakx0dHB1S3BvZE11Nkl3VVJMVlI2UjJQd0owRWE0amlMVkZLUndtVS1ZbGVON3RNQUNXZ0ZYQkgtTzRnLUpnNnhZcHRtMmw0WldsejM1VElHUGU1NWxuaHRIaXFGYlJjVXlwbGlmc2I0SzFGLVprZEhocEQyUERtMWlpeWF2MmFwZ3F0cFFBOXhRcE92bUFGR2ZiamtoLWxpM1RRWTgyRDFmcGpOMXJ0UzBfSFVuWTNodFhrSlJULXh3cHM0MHgtTlRoc0pmS1FGVExqUWd3OW9KUVZSQWNFMnYzZDlzUUk2QlFKcHRQQ0hpWm9MTVBYd0U",
+      "source": "Google News - International Education",
+      "published": "Mon, 13 Oct 2025 07:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwJBVV95cUxQeS1XLXpUd3N0RXF2UTh4MEZLeUVVWnA4WklDSUVfakx0dHB1S3BvZE11Nkl3VVJMVlI2UjJQd0owRWE0amlMVkZLUndtVS1ZbGVON3RNQUNXZ0ZYQkgtTzRnLUpnNnhZcHRtMmw0Wl",
       "tags": [
-        "application",
-        "trends"
+        "general"
       ],
-      "priority": 5,
-      "collected_at": "2025-11-02T14:14:39.126095"
+      "priority": 6,
+      "collected_at": "2025-11-03T05:13:30.464163+00:00"
     }
   ]
 }

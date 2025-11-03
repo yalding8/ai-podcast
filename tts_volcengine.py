@@ -224,12 +224,15 @@ class TTSDuplexClient:
                     logger.debug("recv <- %s", msg)
 
                     if msg.type == MsgType.AudioOnlyServer:
-                        self.audio_buffer.extend(msg.payload)
+                        # 只保存音频数据（payload），不保存 JSON 响应
+                        if msg.payload:
+                            self.audio_buffer.extend(msg.payload)
+                            logger.debug(f"接收音频数据：{len(msg.payload)} 字节")
                         if msg.flag in (
                             MsgTypeFlagBits.LastNoSeq,
                             MsgTypeFlagBits.NegativeSeq,
                         ):
-                            logger.info("音频数据接收完毕")
+                            logger.info("音频数据接收完毕，总计 %d 字节", len(self.audio_buffer))
                             self._finished.set()
                             break
                     elif msg.type == MsgType.FullServerResponse:
@@ -305,6 +308,13 @@ def load_script(path: Path) -> str:
 
 
 def save_audio(path: Path, data: bytes) -> None:
+    if not data:
+        raise ValueError("音频数据为空，无法保存")
+    
+    # 检查数据是否为有效音频（简单检查前几个字节）
+    if data[:4] == b'{"co':  # JSON 数据
+        raise ValueError("接收到的是 JSON 数据而非音频数据，请检查 TTS 服务配置")
+    
     path.write_bytes(data)
     logger.info("音频已保存：%s (%.2f KB)", path, len(data) / 1024)
 
@@ -330,8 +340,8 @@ async def main() -> None:
     )
 
     client_cfg = TTSClientConfig(
-        app_id=_env("1474910664"),
-        auth_token=_env("_UVnEQFD_Mrq7OKFN_ulNKIyJhV6vdGl"),
+        app_id=_env("VOLC_APP_ID"),
+        auth_token=_env("VOLC_AUTH_TOKEN"),
         endpoint=_env(
             "VOLC_MAAS_ENDPOINT",
             "wss://openspeech.bytedance.com/api/v3/tts/bidirection",

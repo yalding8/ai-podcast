@@ -7,10 +7,21 @@ import requests
 logger = logging.getLogger(__name__)
 
 
+def _sanitize_input(text: str) -> str:
+    """清理用户输入，防止XSS攻击"""
+    import html
+    # HTML转义
+    sanitized = html.escape(text)
+    # 移除危险字符
+    dangerous_chars = ['<', '>', '"', "'", '&', ';']
+    for char in dangerous_chars:
+        sanitized = sanitized.replace(char, '')
+    return sanitized
+
 def _prepare_query(keywords: Union[str, Sequence[str]]) -> str:
     """标准化查询语句，确保包含布尔逻辑时带上括号。"""
     if isinstance(keywords, str):
-        raw = keywords.strip()
+        raw = _sanitize_input(keywords.strip())
         if not raw:
             return ""
         logical_tokens = (" OR ", " AND ", " NOT ", " NEAR ")
@@ -20,7 +31,7 @@ def _prepare_query(keywords: Union[str, Sequence[str]]) -> str:
             return f"({raw})"
         return raw
 
-    cleaned: List[str] = [item.strip() for item in keywords if item and item.strip()]
+    cleaned: List[str] = [_sanitize_input(item.strip()) for item in keywords if item and item.strip()]
     if not cleaned:
         return ""
 
@@ -36,7 +47,7 @@ def _prepare_query(keywords: Union[str, Sequence[str]]) -> str:
 
 def search_gdelt(
     keywords: Union[str, Sequence[str]],
-    hours: int = 24,
+    hours: int = 720,  # 默认30天
 ) -> List[Dict[str, str]]:
     """
     搜索 GDELT 最近 hours 小时的新闻。
@@ -44,7 +55,7 @@ def search_gdelt(
     Args:
         keywords: 字符串或字符串序列。若包含 OR/AND 等布尔逻辑，会自动补上括号；
                   传入列表时默认用 OR 连接，并对多词短语加引号。
-        hours: 查询时间范围（小时）。
+        hours: 查询时间范围（小时），默认720小时（30天）。
 
     Returns:
         List[Dict[str, str]]: 标准化后的新闻列表，失败时返回空列表。
@@ -63,11 +74,11 @@ def search_gdelt(
         "timespan": f"{hours}h",
     }
 
-    try:
-        response = requests.get(url, params=params, timeout=15)
-        response.raise_for_status()
-    except requests.RequestException as exc:
-        logger.warning("GDELT 请求失败：%s", exc)
+    from error_utils import safe_http_get
+    
+    response = safe_http_get(url, params=params, timeout=15, max_retries=3)
+    if response is None:
+        logger.warning("GDELT 请求失败")
         return []
 
     content_type = response.headers.get("Content-Type", "")
@@ -96,11 +107,12 @@ def search_gdelt(
         url_value = article.get("url")
         if not title or not url_value:
             continue
+        # 清理输出数据，防止XSS
         normalized.append(
             {
-                "title": title,
-                "url": url_value,
-                "source": article.get("domain", "GDELT"),
+                "title": _sanitize_input(title),
+                "url": url_value,  # URL不需要HTML转义
+                "source": _sanitize_input(article.get("domain", "GDELT")),
                 "published": article.get("seendate", ""),
                 "priority": 6,
             }

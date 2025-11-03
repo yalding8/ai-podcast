@@ -6,7 +6,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 THIS_DIR = Path(__file__).resolve().parent
@@ -36,7 +36,7 @@ def save_queue_items(data: dict) -> None:
     items.sort(key=lambda x: x.get('priority', 0), reverse=True)
     data['items'] = items
     data['total'] = len(items)
-    data['updated_at'] = datetime.now().isoformat()
+    data['updated_at'] = datetime.now(timezone.utc).isoformat()
     NEWS_QUEUE_PATH.parent.mkdir(parents=True, exist_ok=True)
     NEWS_QUEUE_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
 
@@ -72,7 +72,7 @@ def merge_integrated_demo() -> int:
         print(f"  ⚠️ 获取 demo 数据失败：{exc}")
         return 0
 
-    now_iso = datetime.now().isoformat()
+    now_iso = datetime.now(timezone.utc).isoformat()
     demo_items = []
     for article in articles:
         url = article.get('url')
@@ -116,7 +116,16 @@ def merge_integrated_demo() -> int:
 
     save_queue_items(queue_data)
 
-    RUN_SUMMARY['Integrated Demo'] = {
+    summary_payload = {}
+    if RSS_SUMMARY_PATH.exists():
+        try:
+            summary_payload = json.loads(RSS_SUMMARY_PATH.read_text(encoding='utf-8'))
+        except json.JSONDecodeError:
+            summary_payload = {}
+    if not isinstance(summary_payload, dict):
+        summary_payload = {}
+    sources_summary = summary_payload.setdefault('sources', {})
+    sources_summary['Integrated Demo'] = {
         'status': 'success' if merged > 0 else 'skipped',
         'rss': 'demo',
         'raw_new_items': len(demo_items),
@@ -124,6 +133,10 @@ def merge_integrated_demo() -> int:
         'priority': 10,
         'reason': None if merged > 0 else 'no new items',
     }
+    summary_payload['run_at'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
+    summary_payload['total_items'] = summary_payload.get('total_items', 0)
+    RSS_SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    RSS_SUMMARY_PATH.write_text(json.dumps(summary_payload, ensure_ascii=False, indent=2), encoding='utf-8')
 
     return merged
 def run_command(cmd, env=None):
@@ -239,9 +252,9 @@ def main():
         args.extract = True
         args.review = True
         args.stage3 = True
-        args.demo = True
+        args.demo = False  # 默认禁用Demo
     elif args.collect and not args.demo and not args.no_demo:
-        args.demo = True
+        args.demo = False  # 默认禁用Demo
 
     env = os.environ.copy()
 

@@ -1,39 +1,27 @@
 === 优先级 8 待审列表 ===
-（无匹配条目）
+[World Education Services (WENR)] International Student Mobility Data Sources: A Primer
+  → https://wenr.wes.org/2025/08/student-mobility-data-sources-part-1
+[World Education Services (WENR)] Rebuilding Syria’s Education System: Navigating Challenges and Embracing Opportunities
+  → https://wenr.wes.org/2025/03/rebuilding-syrias-education-system-navigating-challenges-and-embracing-opportunities
+[World Education Services (WENR)] Insights on Global Academic Credential Trends: An Interview with Ari Mihael, Director of Educational Standards at WES
+  → https://wenr.wes.org/2025/03/insights-on-global-academic-credential-trends-an-interview-with-ari-mihael-director-of-educational-standards-at-wes
+[World Education Services (WENR)] Navigating Change: Hans de Wit on the Future of International Higher Education
+  → https://wenr.wes.org/2025/01/navigating-change-hans-de-wit-on-the-future-of-international-higher-education
 
 === RSS 采集概况 ===
-运行时间：2025-11-02T14:15:11
-❌ Australian Department of Home Affairs | 新增: 0 | 去重后: 0 | 优先级: 9 | 备注: fetch/parse failed
-❌ Campus France | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ Chevening Scholarships | 新增: 0 | 去重后: 0 | 优先级: 9 | 备注: fetch/parse failed
-❌ DAAD | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ Education New Zealand | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: fetch/parse failed
-❌ IRCC Newsroom | 新增: 0 | 去重后: 0 | 优先级: 10 | 备注: fetch/parse failed
-❌ Inside Higher Ed | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ MIT News | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ QS Insights Magazine | 新增: 0 | 去重后: 0 | 优先级: 5 | 备注: fetch/parse failed
-❌ Singapore Ministry of Education | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ Times Higher Education | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: fetch/parse failed
-❌ University of Cambridge | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ University of Toronto | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: fetch/parse failed
-❌ World Bank Education | 新增: 0 | 去重后: 0 | 优先级: 6 | 备注: fetch/parse failed
-✅ UK GOV Education | 新增: 19 | 去重后: 18 | 优先级: 9
-✅ UK Visas and Immigration | 新增: 15 | 去重后: 14 | 优先级: 10
-✅ r/ApplyingToCollege | 新增: 5 | 去重后: 5 | 优先级: 5
-✅ r/gradadmissions | 新增: 4 | 去重后: 4 | 优先级: 5
-✅ Google News - International Education | 新增: 1 | 去重后: 1 | 优先级: 6
-✅ QS Rankings News | 新增: 1 | 去重后: 1 | 优先级: 7
+运行时间：2025-11-03T05:13:33+00:00
+❌ College Board | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: fetch/parse failed
+❌ University World News | 新增: 0 | 去重后: 0 | 优先级: 10 | 备注: fetch/parse failed
+✅ NAFSA News | 新增: 20 | 去重后: 20 | 优先级: 7
+✅ Google News - International Education | 新增: 10 | 去重后: 10 | 优先级: 6
+✅ Study International | 新增: 7 | 去重后: 7 | 优先级: 10
+✅ QS Top Universities | 新增: 7 | 去重后: 6 | 优先级: 9
+✅ World Education Services (WENR) | 新增: 4 | 去重后: 4 | 优先级: 8
+✅ UK GOV Education | 新增: 3 | 去重后: 3 | 优先级: 7
+✅ UK Visas and Immigration | 新增: 2 | 去重后: 2 | 优先级: 10
+✅ USCIS Newsroom | 新增: 2 | 去重后: 2 | 优先级: 10
+✅ The PIE News | 新增: 1 | 去重后: 1 | 优先级: 10
 ✅ ApplyBoard Insights | 新增: 0 | 去重后: 0 | 优先级: 6
-✅ Google News - University Rankings | 新增: 0 | 去重后: 0 | 优先级: 5
 ✅ ICEF Monitor | 新增: 0 | 去重后: 0 | 优先级: 10
-✅ NAFSA News | 新增: 0 | 去重后: 0 | 优先级: 7
-✅ The PIE News | 新增: 0 | 去重后: 0 | 优先级: 10
-✅ USCIS Newsroom | 新增: 0 | 去重后: 0 | 优先级: 10
-✅ World Education Services (WENR) | 新增: 0 | 去重后: 0 | 优先级: 6
-⏭️ Duolingo English Test | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: requires scraper
 ⏭️ ETS TOEFL | 新增: 0 | 去重后: 0 | 优先级: 9 | 备注: requires scraper
 ⏭️ IELTS Official | 新增: 0 | 去重后: 0 | 优先级: 9 | 备注: requires scraper
-⏭️ Study in Australia | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: requires scraper
-⏭️ UCAS | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: requires scraper
-⏭️ Universities Canada | 新增: 0 | 去重后: 0 | 优先级: 7 | 备注: requires scraper
-⏭️ 中国教育部留学服务中心 | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: requires scraper

@@ -1,85 +1,165 @@
 {
-  "total": 34,
+  "total": 22,
   "items": [
     {
-      "title": "Studying in Scotland as a Pakistani student",
-      "url": "https://thepienews.com/studying-in-scotland-as-a-pakistani-student/",
+      "title": "Sanchari Sen Rai, ECC Hive",
+      "url": "https://thepienews.com/sanchari-sen-rai-ecc-hive/",
       "source": "The PIE News",
-      "published": "Fri, 31 Oct 2025 16:17:39 +0000",
-      "summary": "<p>Watch as former international student Syed Saad Ali Pasha reminisces about his time as an Erasmus scholar studying at the University of Glasgow.</p>\n<p>The post <a href=\"https://thepienews.com/stud",
+      "published": "Fri, 31 Oct 2025 09:39:49 +0000",
+      "summary": "<p>This week, The PIE sat down with CEO and co-founder of ECC Hive Sanchari Sen Rai to talk about her favourite international education conference and why she'd like to pick up Spanish.</p>\n<p>The pos",
       "tags": [
         "policy",
         "institution",
         "market"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T12:35:33.671016",
-      "chinese_summary": "1. 巴基斯坦学生可申请苏格兰伊拉斯谟奖学金项目。\n2. 格拉斯哥大学提供跨文化学术交流机会。\n3. 建议提前了解签证政策与跨文化适应指南。\n4. 关注2025年苏格兰高校奖学金申请时间节点。\n5. 国际学生应积极参与校园多元文化活动。",
-      "article_length": 2192
+      "collected_at": "2025-11-03T05:12:59.896272+00:00",
+      "chinese_summary": "1. 受访者强调通过职业发展指导对国际学生产生直接积极影响。\n2. 推崇伊斯坦布尔国际教育峰会，促进跨文化合作与行业创新。\n3. 建议国际学生关注《Hive Life》播客获取真实留学经验分享。\n4. 正拓展全球导师计划，为留学生提供职业技能工作坊支持。\n5. 倡导女性领导力与性别平等在国际教育领域的重要性。",
+      "article_length": 5115
     },
     {
-      "title": "Visiting the UK as an EU, EEA or Swiss citizen",
-      "url": "https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "What you need to know about crossing the UK border and visiting the UK as a citizen from the EU, Switzerland, Norway, Iceland or Liechtenstein.",
+      "title": "Stetson University: Providing Top Academics and Many Pathways to Success",
+      "url": "https://studyinternational.com/news/stetson-university-providing-top-academics-and-many-pathways-to-success/",
+      "source": "Study International",
+      "published": "Fri, 31 Oct 2025 11:27:44 +0000",
+      "summary": "At Stetson University, international students live, learn, and thrive together on a campus with over 60 nationalities represented.",
       "tags": [
-        "uk",
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585014+00:00",
+      "chinese_summary": "1. 斯泰森大学为国际生提供115个专业，师生比10:1。\n2. 日本学生佐佐木通过高尔夫项目实现学业与职业双发展。\n3. 学校提供实习与研究项目，毕业生就业率达93%。\n4. 国际生可获奖学金，参与130个社团构建社交网络。\n5. 建议利用NCAA体育项目培养综合能力与团队归属感。",
+      "article_length": 6051
+    },
+    {
+      "title": "No shortcuts to success: A look at the longest degrees in the world",
+      "url": "https://studyinternational.com/news/longest-degrees-in-the-world/",
+      "source": "Study International",
+      "published": "Fri, 31 Oct 2025 08:45:17 +0000",
+      "summary": "The rewards are worth it though.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585033+00:00",
+      "chinese_summary": "1. 全球医学、建筑等专业学制达6-12年，强调深度培养。\n2. 国际学生需评估时间成本，提前规划资金与职业路径。\n3. 建议选择前调研课程结构，关注学术与执业资格衔接。\n4. 部分国家提供分段学位，可灵活调整学习进度。\n5. 教育机构正优化长学制课程支持体系。",
+      "article_length": 99
+    },
+    {
+      "title": "Bentley University: Business degrees for the innovation age",
+      "url": "https://studyinternational.com/news/bentley-university-business-degrees-for-the-innovation-age/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 09:47:52 +0000",
+      "summary": "At Bentley University, business education meets technology. Learn how its STEM programmes prepare you for success in a digital, data-driven world.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585047+00:00",
+      "chinese_summary": "1. 本特利大学革新商科教育，融合技术与商业战略应对AI时代。\n2. 开设金融科技、商业分析等STEM课程，强化数据管理与AI应用能力。\n3. 通过VR实验室、跨学科合作，培养国际学生技术实践与跨文化技能。\n4. 建议留学生选择融合伦理与技术的商科项目，提升可持续竞争力。",
+      "article_length": 7633
+    },
+    {
+      "title": "African-American student gets 14k views for YouTube video about her first week studying in Malaysia",
+      "url": "https://studyinternational.com/news/youtube-video-malaysia-study-abroad/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 09:11:31 +0000",
+      "summary": "The comment section is flooded with support and advice.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585053+00:00",
+      "chinese_summary": "1. 非裔美籍学生发布马来西亚留学首周视频，获1.4万次观看。\n2. 展现跨文化适应过程，为国际学生提供真实参考。\n3. 建议留学生提前了解当地文化，善用社交媒体记录分享。",
+      "article_length": 134
+    },
+    {
+      "title": "Advancing at Texas A&M University: From graduate degrees to global success",
+      "url": "https://studyinternational.com/news/advancing-at-texas-am-university-from-graduate-degrees-to-global-success/",
+      "source": "Study International",
+      "published": "Thu, 30 Oct 2025 04:54:17 +0000",
+      "summary": "Texas A&#038;M’s College of Architecture blends evidence-based design, hands-on makerspaces, and global ties to prepare master’s graduates for impactful careers.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585059+00:00",
+      "chinese_summary": "1. 德州农工大学建筑学院提供城市规划等专业，培养应对住房危机等全球挑战人才。\n2. 国际学生通过实习与行业理事会积累经验，如参与实际项目与职业展会。\n3. 课程强调实证设计，结合研究与实践，助力学生专精领域发展。\n4. 校友就业于政府机构及顶尖设计公司，展现教育成果与职业路径。\n5. 建议学生利用学院资源与网络，明确职业目标并积极参与实践。",
+      "article_length": 9108
+    },
+    {
+      "title": "Spend 24 hours in Montreal, Quebec with an international student",
+      "url": "https://studyinternational.com/news/24-hours-in-montreal-intern/",
+      "source": "Study International",
+      "published": "Wed, 29 Oct 2025 12:06:58 +0000",
+      "summary": "A day in the life of a Malaysian in Montreal.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585066+00:00",
+      "chinese_summary": "1. 蒙特利尔留学生24小时生活纪实，展多元文化背景。\n2. 国际学生体验本地生活，适应新环境受影响。\n3. 2025年10月发布，提供文化融入实用指南。\n4. 建议留学生积极参与社区互动，加速适应。\n5. 把握时间节点，规划学业与生活平衡发展。",
+      "article_length": 98
+    },
+    {
+      "title": "Where Nordic values meet global ambition: inside the Copenhagen MBA",
+      "url": "https://studyinternational.com/news/where-nordic-values-meet-global-ambition-inside-the-copenhagen-mba/",
+      "source": "Study International",
+      "published": "Wed, 29 Oct 2025 11:41:22 +0000",
+      "summary": "Copenhagen Business School’s Full-Time MBA blends Nordic values, sustainability. and people-centred leadership.",
+      "tags": [
+        "policy",
+        "institution",
+        "student"
+      ],
+      "priority": 10,
+      "collected_at": "2025-11-03T05:13:03.585072+00:00",
+      "chinese_summary": "1. 哥本哈根商学院MBA融合北欧价值观与可持续发展理念，强调社会责任领导力。\n2. 小班化国际课堂覆盖15-20国学员，通过企业实战项目培养跨文化管理能力。\n3. 课程贯穿ESG原则与人工智能等前沿议题，注重体验式教学与反思实践。\n4. 建议国际学生通过校企合作网络融入北欧商业生态，掌握变革领导力技能。",
+      "article_length": 7218
+    },
+    {
+      "title": "Revised Form I-129 Now Available",
+      "url": "https://www.uscis.gov/archive/revised-form-i-129-now-available",
+      "source": "USCIS Newsroom",
+      "published": "Fri, 09 Jan 2015 16:10:44 +0000",
+      "summary": "<span>Revised Form I-129 Now Available</span>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span>rdrake</span></span>\n<span class=\"field field--name-created fie",
+      "tags": [
+        "us",
         "visa",
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878798",
-      "chinese_summary": "1. 欧盟等国公民访英需持有效护照或特定身份证件，免签停留不超过6个月。\n2. 非爱尔兰籍欧盟公民需申请电子旅行授权（ETA），边境可使用电子护照通道。\n3. 商务访问禁止从事带薪工作，需提前确认活动是否符合访客规定。\n4. 非欧盟家属需查验签证或ETA，定居计划申请人可凭确认函通行。\n5. 建议国际学生行前核查签证有效期，避免因证件问题延误入境。",
-      "article_length": 11725
+      "collected_at": "2025-11-03T05:13:16.201077+00:00",
+      "chinese_summary": "1. 美国移民局2015年1月发布新版I-129表格\n2. 2015年5月起仅接受新版，旧版失效\n3. 影响所有非移民工作签证申请者\n4. 建议国际学生及时下载新版表格填报\n5. 表格优化提升审批效率，需完整填写",
+      "article_length": 888
     },
     {
-      "title": "Guidance: Register of licensed sponsors: workers",
-      "url": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "List of organisations licensed to sponsor workers on the Worker and Temporary Worker immigration routes.",
+      "title": "Newsroom",
+      "url": "https://www.uscis.gov/newsroom",
+      "source": "USCIS Newsroom",
+      "published": "Fri, 12 Apr 2013 12:14:04 +0000",
+      "summary": "<span>Newsroom</span>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span>admin</span></span>\n<span class=\"field field--name-created field--type-created field--l",
       "tags": [
-        "uk",
+        "us",
         "visa",
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878821",
-      "chinese_summary": "1. 英国内政部定期更新工签担保机构名单，最近更新于2025年10月31日。\n2. 该名单面向技术工人及临时工作者，包含机构资质与评级信息。\n3. 建议国际学生求职时核查雇主担保资质，确保签证合规性。\n4. 可通过政府官网获取最新名单，或申请无障碍格式文件。\n5. 关注担保机构评级变化，及时调整职业规划。",
-      "article_length": 115838
-    },
-    {
-      "title": "Guidance: Pakistan: country policy and information notes",
-      "url": "https://www.gov.uk/government/publications/pakistan-country-policy-and-information-notes",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Guidance used by UK Visas and Immigration to make decisions in asylum and human rights applications.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878844",
-      "chinese_summary": "1. 英国更新巴基斯坦政策指南，涉及性别暴力等群体。\n2. 受影响人群包括妇女、宗教少数派及性少数群体。\n3. 2025年10月最新修订性别暴力相关指引。\n4. 建议国际学生关注庇护政策动态，备齐证明文件。\n5. 特定群体需注意英国签证审核标准变化。",
-      "article_length": 9271
-    },
-    {
-      "title": "Guidance: Tanzania: tuberculosis test clinics for a UK visa",
-      "url": "https://www.gov.uk/government/publications/tuberculosis-test-for-a-uk-visa-clinics-in-tanzania",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Where to get tested for tuberculosis (TB) in Tanzania for your UK visa application.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878860",
-      "chinese_summary": "1. 坦桑尼亚居民赴英超6个月需结核检测，含家属及返英居民。\n2. 检测要求适用于近6个月居住坦桑尼亚等指定国人群。\n3. 2025年更新诊所信息与联系方式，可在线预约检测。\n4. 国际学生应核查最新检测机构清单并预留证书办理时间。\n5. 注意检测费用与证书补发规定，避免影响签证申请。",
-      "article_length": 1967
+      "collected_at": "2025-11-03T05:13:16.201109+00:00",
+      "chinese_summary": "1. 美终止部分工作许可自动延期，影响特定类别移民申请者。\n2. 移民局全面推行电子支付，10月28日起纸质申请需在线缴费。\n3. 建议国际学生及时关注政策更新，确保材料合规递交。",
+      "article_length": 1651
     },
     {
       "title": "Migration transparency data",
@@ -93,153 +173,9 @@
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878871",
-      "chinese_summary": "1. 英国内政部发布2025年二季度移民透明度数据\n2. 涵盖签证审批、边境执法及庇护申请等全流程\n3. 国际学生应关注担保机构资质与审批时效\n4. 建议提前核查学校担保资质及申请材料完整性\n5. 注意签证政策变化并预留充足申请时间",
+      "collected_at": "2025-11-03T05:13:18.675178+00:00",
+      "chinese_summary": "1. 英国内政部发布2025年二季度移民透明度数据\n2. 涵盖签证审批、边境执法及庇护申请等全流程\n3. 国际学生应关注担保机构资质与申请时效指标\n4. 建议提前核查学校担保资质及历史通过率\n5. 注意签证决策周期与申诉机制的最新变化",
       "article_length": 8422
-    },
-    {
-      "title": "Guidance: Immigration status checks: guidance for banks and building societies",
-      "url": "https://www.gov.uk/government/publications/immigration-status-checks-guidance-for-banks",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Guidance for banks and building societies on carrying out immigration status checks on current account holders and applicants.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878883",
-      "chinese_summary": "1. 英国2014年移民法要求银行核查账户持有人移民身份。\n2. 非法居留者不得开立账户，部分现有账户需强制关闭。\n3. 2025年10月更新指引，新增电子签证状态验证说明。\n4. 建议国际学生确保签证有效，及时更新居留信息。\n5. 若遇账户问题，联系银行并查阅内政部相关指导文件。",
-      "article_length": 1745
-    },
-    {
-      "title": "Form: Apply for asylum support: form ASF1",
-      "url": "https://www.gov.uk/government/publications/application-for-asylum-support-form-asf1",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Form for destitute asylum applicants and failed asylum seekers to apply for support.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878893",
-      "chinese_summary": "1. 英国政府为贫困寻求庇护者提供支持申请表。\n2. 适用于庇护申请待决或失败且面临困境者。\n3. 最新表格于2025年10月更新，含纸质与在线版本。\n4. 建议国际学生通过指定渠道申请无障碍格式文件。\n5. 紧急情况需在14天内提交申请以防流落街头。",
-      "article_length": 2866
-    },
-    {
-      "title": "Guidance: Information booklet for asylum applications",
-      "url": "https://www.gov.uk/government/publications/information-leaflet-for-asylum-applications",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Information booklet for those who have registered, or are considering registering, an asylum application in the UK.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878903",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Guidance: Form AN: guidance",
-      "url": "https://www.gov.uk/government/publications/form-an-guidance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "How to apply for citizenship by naturalisation if you are living in the UK.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878914",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Guidance: Home Office Gaza process: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/home-office-gaza-process-caseworker-guidance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "For Home Office personnel conducting security checks and delivering the visa process for Gaza medical evacuations (medevacs) and Gaza scholarship students.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878923",
-      "chinese_summary": "1. 英国内政部发布加沙签证指南，针对医疗撤离与奖学金学生。\n2. 2025年9月首版发布，10月更新奖学金政策细则。\n3. 签证官需执行安全审查，协助加沙人员撤离英国。\n4. 建议国际学生关注政策更新，及时提交辅助技术需求。",
-      "article_length": 1621
-    },
-    {
-      "title": "Guidance: Language analysis: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/language-analysis-instruction",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on the language analysis process used by the Home Office, how it is accessed and when it should be used to establish place of origin.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878935",
-      "chinese_summary": "1. 英国内政部更新语言分析指南，用于核实申请人原籍地。\n2. 主要影响国籍存疑的签证申请人，尤其涉及庇护案件审理。\n3. 2025年10月修订，取消同意书要求并更新供应商信息。\n4. 新增向申请人解释流程的规定，优化时间安排。\n5. 建议国际学生备齐语言证明，配合官方核查程序。",
-      "article_length": 1993
-    },
-    {
-      "title": "Guidance: Family life and exceptional circumstances: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/family-life-as-a-partner-or-parent-private-life-and-exceptional-circumstance",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on considering claims based on family life (as a partner or parent) or exceptional circumstances.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878946",
-      "chinese_summary": "1. 英国更新家庭类签证指南，明确伴侣与父母身份定义。\n2. 影响在英家庭团聚申请者，涉及公共资金申请资格调整。\n3. 2025年10月修订移民规则，强化儿童权益保障条款。\n4. 建议国际学生核查自身签证条件，及时提交状态变更申请。\n5. 申请者需注意更新财务证明要求，备齐书面证据材料。",
-      "article_length": 4991
-    },
-    {
-      "title": "Guidance: Administrative review: caseworker guidance",
-      "url": "https://www.gov.uk/government/publications/administrative-review",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Immigration staff guidance on processing applications for an administrative review.",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878967",
-      "chinese_summary": "1. 英国签证移民局更新行政复议指南，明确审查流程与错误类型。\n2. 2025年10月修订审查标准，影响欧盟定居计划等签证申请者。\n3. 建议国际学生在收到拒签决定后，及时了解行政复议适用条件。",
-      "article_length": 5346
-    },
-    {
-      "title": "Apply for a Parent of a Child Student visa: step by step",
-      "url": "https://www.gov.uk/apply-parent-child-student-visa",
-      "source": "UK Visas and Immigration",
-      "published": "",
-      "summary": "Parent of a Child Student visa - prepare supporting documents, apply, book and attend an appointment, what happens at the UK border",
-      "tags": [
-        "uk",
-        "visa",
-        "policy"
-      ],
-      "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878977",
-      "chinese_summary": "1. 家长需为陪读未成年留学者申请签证，费用637英镑起。\n2. 审批周期通常三周，可付费加急至5日或24小时内出结果。\n3. 获批后需创建UKVI账户关联电子签证，入境时备齐证明文件。\n4. 抵英后注意签证有效期，违规可能影响未来入境资格。\n5. 建议提前核查结核检测要求，保持联络文件便于边境查验。",
-      "article_length": 1975
     },
     {
       "title": "Check your electronic travel authorisation (ETA)",
@@ -253,297 +189,169 @@
         "policy"
       ],
       "priority": 10,
-      "collected_at": "2025-11-02T12:35:39.878993",
-      "chinese_summary": "1. 英国电子旅行授权在线核查服务已上线。\n2. ETA有效期两年，需与护照信息保持一致。\n3. 未持签证或居留许可者需提前申请ETA。\n4. 建议国际学生出行前核查旅行文件有效期。\n5. 申请后三个工作日未获批复需联系移民局。",
+      "collected_at": "2025-11-03T05:13:18.675261+00:00",
+      "chinese_summary": "1. 英国推行电子旅行授权，有效期两年关联护照。\n2. 护照变更需重新申请，未获批者三个工作日后联系。\n3. 持有效签证者免办，建议国际学生行前确认资质。",
       "article_length": 921
     },
     {
-      "title": "Children’s social work workforce census: guide to submitting data",
-      "url": "https://www.gov.uk/guidance/childrens-social-work-workforce-census-guide-to-submitting-data",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "How local authorities should collect and submit data to complete the children’s social work workforce census.",
+      "title": "How Future17 gave me a new perspective on sustainability",
+      "url": "https://www.topuniversities.com/student-info/student-stories/how-future17-gave-me-new-perspective-sustainability",
+      "source": "QS Top Universities",
+      "published": "Fri, 31 Oct 2025 11:20:51 +0000",
+      "summary": "<h1>How Future17 gave me a new perspective on sustainability </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"username\" hre",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309062",
-      "chinese_summary": "1. 英国地方当局须依法提交儿童社工年度普查数据，涵盖10月1日至次年9月30日。\n2. 普查对象含在岗/离职/派遣社工，需通过DfE系统于2025年10月31日前提交。\n3. 机构须向员工发放隐私通知，明确数据权利与保护条款。\n4. 国际学生若参与社工工作，应主动确认数据提交状态并核对系统权限。\n5. 遇到系统问题可联系审批人或使用服务请求表获取技术支持。",
-      "article_length": 4600
+      "collected_at": "2025-11-03T05:13:15.013231+00:00",
+      "chinese_summary": "1. Future17项目聚焦联合国可持续发展目标，助力学生解决实际问题。\n2. 参与者与跨国企业合作，研究医疗废物回收等可持续议题。\n3. 项目培养跨文化协作能力，建议国际学生积极参与此类实践。",
+      "article_length": 11234
     },
     {
-      "title": "Guidance: Further education: initial teacher education",
-      "url": "https://www.gov.uk/government/publications/further-education-initial-teacher-education",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Information for providers of initial teacher education (ITE) for the further education (FE) sector.",
+      "title": "Rome Business School",
+      "url": "https://www.topuniversities.com/universities/rome-business-school/undergrad",
+      "source": "QS Top Universities",
+      "published": "Fri, 31 Oct 2025 09:06:20 +0000",
+      "summary": "<h1>Rome Business School</h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"username\" href=\"https://www.topuniversities.com/us",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309084",
-      "chinese_summary": "1. 英国教育部更新继续教育教师培养指南，适用2025-26学年。\n2. 面向教师培训机构、课程开发者及准教师群体。\n3. 设立专家咨询组完善政策，更新资格框架与资助标准。\n4. 国际学生可订阅行业通讯，关注官方课程认证列表。\n5. 建议通过教育部门邮箱获取最新实习与教学要求。",
-      "article_length": 3063
+      "collected_at": "2025-11-03T05:13:15.013258+00:00",
+      "chinese_summary": "1. 罗马商学院为国际管理学院，生源覆盖150余国。\n2. 提供线上线下灵活授课，衔接学术与就业市场。\n3. 国际贸易硕士MBA排名全球第26位（2026）。\n4. 建议国际学生参考奖学金指南缓解经济压力。\n5. 年生活成本约1.4万美元，需提前规划预算。",
+      "article_length": 6180
     },
     {
-      "title": "Guidance: Expert advisory group on further education (FE) teacher training and development",
-      "url": "https://www.gov.uk/government/publications/expert-advisory-group-on-further-education-fe-teacher-training-and-development",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Membership and details of an expert advisory group on teacher training and development in further education.",
+      "title": "Tashkent State University of Oriental Studies - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/tashkent-state-university-oriental-studies-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Tashkent State University of Oriental Studies - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n          ",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309099",
-      "chinese_summary": "1. 英国教育部2025年10月成立专家组  \n2. 旨在完善继续教育教师培训标准  \n3. 影响英格兰职教教师及师范课程  \n4. 建议国际学生关注后续政策更新  \n5. 可订阅邮件获取最新指导文件  \n\n（注：根据原文政府公告性质，重点突出政策制定背景及信息获取渠道，符合25字限制要求）",
-      "article_length": 666
+      "collected_at": "2025-11-03T05:13:15.013268+00:00",
+      "chinese_summary": "1. 2025年11月23日QS官网维护，影响排名查询。\n2. 中亚地区高校排名数据暂不可访问。\n3. 建议国际学生错峰查询2026年亚洲大学排名。",
+      "article_length": 443
     },
     {
-      "title": "Guidance: School census 2025 to 2026: technical information",
-      "url": "https://www.gov.uk/government/publications/school-census-2025-to-2026-technical-information",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Technical specification and validation rules for submitting 2025 to 2026 school census data.",
+      "title": "Chirchik State Pedagogical University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/chirchik-state-pedagogical-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Chirchik State Pedagogical University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                  ",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309111",
-      "chinese_summary": "1. 2025至2026学年英国学校普查技术规范发布，含数据提交规则。\n2. 影响教育管理系统供应商及用户，需关注年度变更要求。\n3. 2025年4月发布基础规范，10月更新验证规则细则。\n4. 国际学生应确认所在院校符合数据提交规范要求。\n5. 建议通过政府官网追踪最新技术文档更新动态。",
-      "article_length": 2028
+      "collected_at": "2025-11-03T05:13:15.013277+00:00",
+      "chinese_summary": "1. 网站2025年11月23日2:30起维护60分钟。\n2. 维护期间用户无法访问排名信息。\n3. 建议国际学生提前保存所需资料。",
+      "article_length": 443
     },
     {
-      "title": "School business professionals: training and development",
-      "url": "https://www.gov.uk/guidance/school-resource-management-training-and-support",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Sources of training and development for school business professionals (SBPs) in schools and trusts.",
+      "title": "Caspian University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/caspian-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Caspian University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                    \n\n\n\n<a class=\"use",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309123",
-      "chinese_summary": "⚠️ 自动提炼失败，请手动处理。\n\n英文原文摘录：\nGuidance\nSchool business professionals: training and development\nSources of training and development for school business professionals (SBPs) in schools and trusts. From:\nDepartment for Education\nPublished\n25 January 2019\nLast updated\n31 October 2025\n—\nSee all updates\nGet emails about this page\nApplies to England\nPrint this page\nSchool business professionals (\nSBPs\n) lead the financial and operational management of schools and trusts. An\nSBP\noften has responsibility for a school’s or trust’s:\noperational leadership\nfinance\nprocurement\nestate management\nmarketing and communications\nhuman resources\nSBPs\nplay a vital role in ensuring that the focus of a school or trust remains on improving educational outcomes.",
-      "article_length": 6147
+      "collected_at": "2025-11-03T05:13:15.013286+00:00",
+      "chinese_summary": "1. 2025年11月23日GMT2:30起网站维护60分钟\n2. 影响全球使用该排名系统的申请人群\n3. 建议国际学生提前保存所需院校对比数据\n4. 维护期间可转向其他官方渠道获取信息\n5. 注意中亚院校排名更新后的政策变化\n\n（注：根据提供的英文内容主要为网站维护通知，未涉及具体院校排名信息，故要点聚焦系统维护本身及其影响。若需分析排名内容，请提供相关文本。）",
+      "article_length": 443
     },
     {
-      "title": "Research: National Education Nature Park: process evaluation",
-      "url": "https://www.gov.uk/government/publications/national-education-nature-park-process-evaluation",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "A summary of implementation of the National Education Nature Park programme during its first 2 years of delivery.",
+      "title": "Abay Myrzakhmetov Kokshetau University - Asian University Rankings - Central Asia 2026",
+      "url": "https://www.topuniversities.com/abay-myrzakhmetov-kokshetau-university-asian-university-rankings-central-asia-2026",
+      "source": "QS Top Universities",
+      "published": "Thu, 30 Oct 2025 10:40:22 +0000",
+      "summary": "<h1>Abay Myrzakhmetov Kokshetau University - Asian University Rankings - Central Asia 2026 </h1>\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\">\n                 ",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "ranking",
+        "admission",
+        "student"
       ],
       "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309134",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
+      "collected_at": "2025-11-03T05:13:15.013302+00:00",
+      "chinese_summary": "1. 网站2025年11月23日维护，国际学生需避开此时段查询。\n2. 维护期间排名数据暂不可访问，影响选校决策。\n3. 建议提前保存目标院校资料备用。\n4. 可关注其他权威平台获取补充信息。",
+      "article_length": 443
     },
     {
-      "title": "Research: Developing a competency framework for effective assistive technology training",
-      "url": "https://www.gov.uk/government/publications/developing-a-competency-framework-for-effective-assistive-technology-training",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Examines the skills and knowledge needed by staff in special schools and colleges to use digital assistive technology effectively.",
+      "title": "International Student Mobility Data Sources: A Primer",
+      "url": "https://wenr.wes.org/2025/08/student-mobility-data-sources-part-1",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 22 Aug 2025 19:37:14 +0000",
+      "summary": "<p>In utilizing any global student mobility data source, it is crucial to understand some basics about each source. Here are some key questions to ask about any source and how to understand what each ",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "global",
+        "research",
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309144",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884215+00:00",
+      "chinese_summary": "1. 美国2018年发布国际学生流动数据指南，解析全球教育趋势。\n2. 影响留学生、教育机构及政策制定者数据决策准确性。\n3. 建议国际生结合多源数据评估留学选择与政策风险。\n4. 报告提供方法论框架，助力跨境教育动态追踪。\n5. 强调实时数据对留学规划与适应的重要性。",
+      "article_length": 55
     },
     {
-      "title": "Research: Effective multi-agency working with assistive technology",
-      "url": "https://www.gov.uk/government/publications/effective-multi-agency-working-with-assistive-technology",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Findings from research exploring how different agencies collaborate in providing and implementing assistive technology.",
+      "title": "Rebuilding Syria’s Education System: Navigating Challenges and Embracing Opportunities",
+      "url": "https://wenr.wes.org/2025/03/rebuilding-syrias-education-system-navigating-challenges-and-embracing-opportunities",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 14 Mar 2025 13:11:56 +0000",
+      "summary": "<p>The Syrian conflict has disrupted education for millions, threatening a generation’s future. Now, with the fall of the Assad regime, there is a critical opportunity to rebuild and reform the educat",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "global",
+        "research",
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309156",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884228+00:00",
+      "chinese_summary": "1. 叙利亚教育重建面临基础设施损毁与师资流失挑战。\n2. 冲突致250万学龄儿童失学，难民学生学业中断。\n3. 政府与联合国合作，2025年启动全国校舍修复计划。\n4. 国际学生宜关注安全局势，优先选择受援示范院校。\n5. 建议通过欧盟教育合作项目获取奖学金与学分认证。",
+      "article_length": 36
     },
     {
-      "title": "Transparency data: DfE and executive agency ePCS spend over £500: 2025 to 2026",
-      "url": "https://www.gov.uk/government/publications/dfe-and-executive-agency-epcs-spend-over-500-2025-to-2026",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Spending by electronic purchasing card solution (ePCS) over £500 in the 2025 to 2026 financial year.",
+      "title": "Insights on Global Academic Credential Trends: An Interview with Ari Mihael, Director of Educational Standards at WES",
+      "url": "https://wenr.wes.org/2025/03/insights-on-global-academic-credential-trends-an-interview-with-ari-mihael-director-of-educational-standards-at-wes",
+      "source": "World Education Services (WENR)",
+      "published": "Fri, 07 Mar 2025 17:56:51 +0000",
+      "summary": "<p>Ari Mihael, Director of Educational Standards at WES, discusses how digital document transmission has revolutionized academic credential evaluations.</p>\n<p>The post <a href=\"https://wenr.wes.org/2",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "global",
+        "research",
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309172",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884233+00:00",
+      "chinese_summary": "1. 韩国教育体系面临学历认证挑战，影响留学生群体。\n2. 2018年10月政策调整，加强学历审核与标准化进程。\n3. 建议国际学生提前核实学历要求，确保材料合规有效。",
+      "article_length": 41
     },
     {
-      "title": "Transparency data: Disclosure of civil servant roles and salary information",
-      "url": "https://www.gov.uk/government/publications/disclosure-of-scs-posts-and-salary-information",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Information on roles and salaries for members of the Department for Education (DfE) and its arm’s length bodies (ALBs).",
+      "title": "Navigating Change: Hans de Wit on the Future of International Higher Education",
+      "url": "https://wenr.wes.org/2025/01/navigating-change-hans-de-wit-on-the-future-of-international-higher-education",
+      "source": "World Education Services (WENR)",
+      "published": "Wed, 29 Jan 2025 16:18:46 +0000",
+      "summary": "<p>Hans de Wit, a leading expert in international higher education, shares his insights on navigating global challenges and the evolving landscape of academic mobility. </p>\n<p>The post <a href=\"https",
       "tags": [
-        "uk",
-        "policy",
-        "visa"
+        "global",
+        "research",
+        "policy"
       ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309183",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Research: Early years financial incentives: evaluation report",
-      "url": "https://www.gov.uk/government/publications/early-years-financial-incentives-evaluation-report",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Report on the 2024 to 2025 early years financial incentives (EYFI) pilot",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309193",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Transparency data: Teachers’ pension scheme payments: 2025 to 2026",
-      "url": "https://www.gov.uk/government/publications/teachers-pension-scheme-payments-2025-to-2026",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Teachers’ pension scheme payments made on behalf of the Department for Education (DfE) in the 2025 to 2026 financial year.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309203",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Transparency data: Independent schools: applications, changes and closures",
-      "url": "https://www.gov.uk/government/publications/independent-schools-applications-changes-and-closures",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Number of independent school applications, changes and closures processed by the Department for Education (DfE).",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309219",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Transparency data: Initial teacher training application reports: monthly statistics",
-      "url": "https://www.gov.uk/government/publications/initial-teacher-training-application-reports-monthly-statistics",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Find the latest monthly statistics on initial teacher training (ITT) recruitment.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309240",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Research: Pulse surveys of childcare and early years providers",
-      "url": "https://www.gov.uk/government/publications/pulse-surveys-of-childcare-and-early-years-providers",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Research reports of the results from the childcare and early years provider pulse surveys.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309250",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Research: Teacher development programmes: theory of change",
-      "url": "https://www.gov.uk/government/publications/teacher-development-programmes-theory-of-change",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Research report including a theory of change model for the department’s recent teacher development programmes.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309260",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Research: Delayed school admissions for summer-born pupils: 2025",
-      "url": "https://www.gov.uk/government/publications/delayed-school-admissions-for-summer-born-pupils-2025",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Surveys of local authorities and of parents and carers of summer-born children requesting delayed admission to reception.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309271",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
-    },
-    {
-      "title": "Transparency data: Independent schools: warning notices and enforcement letters",
-      "url": "https://www.gov.uk/government/publications/independent-schools-warning-notices",
-      "source": "UK GOV Education",
-      "published": "",
-      "summary": "Schools currently failing to meet the independent school standards.",
-      "tags": [
-        "uk",
-        "policy",
-        "visa"
-      ],
-      "priority": 9,
-      "collected_at": "2025-11-02T12:36:07.309281",
-      "chinese_summary": "⚠️ 无法抓取正文",
-      "article_length": 0
+      "priority": 8,
+      "collected_at": "2025-11-03T05:13:31.884241+00:00",
+      "chinese_summary": "1. 全球高等教育面临数字化与地缘政治挑战，需结构性调整。\n2. 国际学生受签证政策、线上教学影响，需提升跨文化适应力。\n3. 院校正推进混合式教学，2025年前强化可持续发展课程。\n4. 建议留学生提前关注政策变化，优先选择多元包容院校。\n5. 掌握数字技能与本地实习资源，增强就业竞争力。",
+      "article_length": 55
     }
   ]
 }

@@ -5,35 +5,35 @@
 
 ## 📰 本期新闻概览
 
-### 新闻1：Studying in Scotland as a Pakistani student
-- 来源：The PIE News | 优先级：10
-- 链接：https://thepienews.com/studying-in-scotland-as-a-pakistani-student/
-
-1. 巴基斯坦学生可申请苏格兰伊拉斯谟奖学金项目。
-2. 格拉斯哥大学提供跨文化学术交流机会。
-3. 建议提前了解签证政策与跨文化适应指南。
-4. 关注2025年苏格兰高校奖学金申请时间节点。
-5. 国际学生应积极参与校园多元文化活动。
-
-### 新闻2：Visiting the UK as an EU, EEA or Swiss citizen
+### 新闻1：Migration transparency data
 - 来源：UK Visas and Immigration | 优先级：10
-- 链接：https://www.gov.uk/guidance/visiting-the-uk-as-an-eu-eea-or-swiss-citizen
+- 链接：https://www.gov.uk/government/statistical-data-sets/migration-transparency-data
 
-1. 欧盟等国公民访英需持有效护照或特定身份证件，免签停留不超过6个月。
-2. 非爱尔兰籍欧盟公民需申请电子旅行授权（ETA），边境可使用电子护照通道。
-3. 商务访问禁止从事带薪工作，需提前确认活动是否符合访客规定。
-4. 非欧盟家属需查验签证或ETA，定居计划申请人可凭确认函通行。
-5. 建议国际学生行前核查签证有效期，避免因证件问题延误入境。
+1. 英国内政部发布2025年二季度移民透明度数据
+2. 涵盖签证审批、边境执法及庇护申请等全流程
+3. 国际学生应关注担保机构资质与申请时效要求
+4. 建议提前核查学校担保资格并预留审批时间
+5. 注意签证政策变化对续签及工签转换的影响
 
-### 新闻3：Guidance: Register of licensed sponsors: workers
+### 新闻2：Guidance: Family life and exceptional circumstances: caseworker guidance
 - 来源：UK Visas and Immigration | 优先级：10
-- 链接：https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers
+- 链接：https://www.gov.uk/government/publications/family-life-as-a-partner-or-parent-private-life-and-exceptional-circumstance
 
-1. 英国内政部定期更新工签担保机构名单，最近更新于2025年10月31日。
-2. 该名单面向技术工人及临时工作者，包含机构资质与评级信息。
-3. 建议国际学生求职时核查雇主担保资质，确保签证合规性。
-4. 可通过政府官网获取最新名单，或申请无障碍格式文件。
-5. 关注担保机构评级变化，及时调整职业规划。
+1. 英国更新家庭类签证指南，明确伴侣与父母定义。
+2. 影响在英家庭团聚申请者，涉及公共资金申请资格。
+3. 2025年10月修订移民规则，强化儿童权益保障条款。
+4. 建议国际学生核查伴侣担保资格，及时提交条件变更申请。
+5. 申请未获批前需避免违规使用公共福利。
+
+### 新闻3：Guidance: Cambodia: tuberculosis test clinics for a UK visa
+- 来源：UK Visas and Immigration | 优先级：10
+- 链接：https://www.gov.uk/government/publications/tuberculosis-test-for-a-uk-visa-clinics-in-cambodia
+
+1. 英国要求柬埔寨长期居民赴英超6个月需结核检测。
+2. 适用人群包括留学生、未婚配偶及离境超2年返英居民。
+3. 最新检测费用于2025年10月更新，需关注指定诊所名单。
+4. 建议国际学生提前核查资质诊所并预留检测时间。
+5. 申请前确认居住史符合检测要求，避免签证延误。
 
 ## Prompt 模板
 ```markdown
@@ -43,35 +43,35 @@
 
 ## 📰 本期新闻要点
 
-### 新闻1：Studying in Scotland as a Pakistani student
-- 来源：The PIE News | 优先级：10 | 发布：Fri, 31 Oct 2025 16:17:39 +0000
-- 标签：policy, institution, market
-
-1. 巴基斯坦学生可申请苏格兰伊拉斯谟奖学金项目。
-2. 格拉斯哥大学提供跨文化学术交流机会。
-3. 建议提前了解签证政策与跨文化适应指南。
-4. 关注2025年苏格兰高校奖学金申请时间节点。
-5. 国际学生应积极参与校园多元文化活动。
-
-### 新闻2：Visiting the UK as an EU, EEA or Swiss citizen
+### 新闻1：Migration transparency data
 - 来源：UK Visas and Immigration | 优先级：10 | 发布：
 - 标签：uk, visa, policy
 
-1. 欧盟等国公民访英需持有效护照或特定身份证件，免签停留不超过6个月。
-2. 非爱尔兰籍欧盟公民需申请电子旅行授权（ETA），边境可使用电子护照通道。
-3. 商务访问禁止从事带薪工作，需提前确认活动是否符合访客规定。
-4. 非欧盟家属需查验签证或ETA，定居计划申请人可凭确认函通行。
-5. 建议国际学生行前核查签证有效期，避免因证件问题延误入境。
+1. 英国内政部发布2025年二季度移民透明度数据
+2. 涵盖签证审批、边境执法及庇护申请等全流程
+3. 国际学生应关注担保机构资质与申请时效要求
+4. 建议提前核查学校担保资格并预留审批时间
+5. 注意签证政策变化对续签及工签转换的影响
 
-### 新闻3：Guidance: Register of licensed sponsors: workers
+### 新闻2：Guidance: Family life and exceptional circumstances: caseworker guidance
 - 来源：UK Visas and Immigration | 优先级：10 | 发布：
 - 标签：uk, visa, policy
 
-1. 英国内政部定期更新工签担保机构名单，最近更新于2025年10月31日。
-2. 该名单面向技术工人及临时工作者，包含机构资质与评级信息。
-3. 建议国际学生求职时核查雇主担保资质，确保签证合规性。
-4. 可通过政府官网获取最新名单，或申请无障碍格式文件。
-5. 关注担保机构评级变化，及时调整职业规划。
+1. 英国更新家庭类签证指南，明确伴侣与父母定义。
+2. 影响在英家庭团聚申请者，涉及公共资金申请资格。
+3. 2025年10月修订移民规则，强化儿童权益保障条款。
+4. 建议国际学生核查伴侣担保资格，及时提交条件变更申请。
+5. 申请未获批前需避免违规使用公共福利。
+
+### 新闻3：Guidance: Cambodia: tuberculosis test clinics for a UK visa
+- 来源：UK Visas and Immigration | 优先级：10 | 发布：
+- 标签：uk, visa, policy
+
+1. 英国要求柬埔寨长期居民赴英超6个月需结核检测。
+2. 适用人群包括留学生、未婚配偶及离境超2年返英居民。
+3. 最新检测费用于2025年10月更新，需关注指定诊所名单。
+4. 建议国际学生提前核查资质诊所并预留检测时间。
+5. 申请前确认居住史符合检测要求，避免签证延误。
 
 ---
 
