@@ -9,14 +9,14 @@
   → https://wenr.wes.org/2025/01/navigating-change-hans-de-wit-on-the-future-of-international-higher-education
 
 === RSS 采集概况 ===
-运行时间：2025-11-03T05:13:33+00:00
+运行时间：2025-11-03T08:47:53+00:00
 ❌ College Board | 新增: 0 | 去重后: 0 | 优先级: 8 | 备注: fetch/parse failed
 ❌ University World News | 新增: 0 | 去重后: 0 | 优先级: 10 | 备注: fetch/parse failed
 ✅ NAFSA News | 新增: 20 | 去重后: 20 | 优先级: 7
 ✅ Google News - International Education | 新增: 10 | 去重后: 10 | 优先级: 6
-✅ Study International | 新增: 7 | 去重后: 7 | 优先级: 10
-✅ QS Top Universities | 新增: 7 | 去重后: 6 | 优先级: 9
+✅ Study International | 新增: 6 | 去重后: 6 | 优先级: 10
 ✅ World Education Services (WENR) | 新增: 4 | 去重后: 4 | 优先级: 8
+✅ QS Top Universities | 新增: 3 | 去重后: 3 | 优先级: 9
 ✅ UK GOV Education | 新增: 3 | 去重后: 3 | 优先级: 7
 ✅ UK Visas and Immigration | 新增: 2 | 去重后: 2 | 优先级: 10
 ✅ USCIS Newsroom | 新增: 2 | 去重后: 2 | 优先级: 10

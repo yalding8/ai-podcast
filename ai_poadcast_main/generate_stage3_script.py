@@ -151,13 +151,54 @@ def call_deepseek(model: str, prompt: str, temperature: float, max_tokens: int) 
 
 def generate_script(provider: str, model: str, prompt: str, temperature: float, max_tokens: int) -> str:
     provider = provider.lower()
-    if provider == "openai":
-        return call_openai(model, prompt, temperature, max_tokens)
-    if provider == "anthropic":
-        return call_anthropic(model, prompt, temperature, max_tokens)
+    
+    # 定义备用方案
+    fallback_providers = []
     if provider == "deepseek":
-        return call_deepseek(model, prompt, temperature, max_tokens)
-    raise RuntimeError(f"不支持的 provider：{provider}")
+        fallback_providers = [("openai", "gpt-4o-mini"), ("anthropic", "claude-3-5-sonnet-20241022")]
+    elif provider == "openai":
+        fallback_providers = [("deepseek", "deepseek-chat"), ("anthropic", "claude-3-5-sonnet-20241022")]
+    elif provider == "anthropic":
+        fallback_providers = [("openai", "gpt-4o-mini"), ("deepseek", "deepseek-chat")]
+    
+    # 尝试主要provider
+    try:
+        if provider == "openai":
+            return call_openai(model, prompt, temperature, max_tokens)
+        if provider == "anthropic":
+            return call_anthropic(model, prompt, temperature, max_tokens)
+        if provider == "deepseek":
+            return call_deepseek(model, prompt, temperature, max_tokens)
+        raise RuntimeError(f"不支持的 provider：{provider}")
+    except Exception as e:
+        error_msg = str(e)
+        # 检查是否是503或服务过载错误
+        if "503" in error_msg or "too busy" in error_msg.lower() or "service_unavailable" in error_msg.lower():
+            sys.stderr.write(f"⚠️ {provider} 服务繁忙，尝试切换备用LLM...\n")
+            
+            # 尝试备用providers
+            for fallback_provider, fallback_model in fallback_providers:
+                try:
+                    sys.stderr.write(f"🔄 尝试使用 {fallback_provider} ({fallback_model})...\n")
+                    if fallback_provider == "openai":
+                        result = call_openai(fallback_model, prompt, temperature, max_tokens)
+                    elif fallback_provider == "anthropic":
+                        result = call_anthropic(fallback_model, prompt, temperature, max_tokens)
+                    elif fallback_provider == "deepseek":
+                        result = call_deepseek(fallback_model, prompt, temperature, max_tokens)
+                    else:
+                        continue
+                    sys.stderr.write(f"✅ 成功使用 {fallback_provider}\n")
+                    return result
+                except Exception as fallback_error:
+                    sys.stderr.write(f"❌ {fallback_provider} 也失败: {fallback_error}\n")
+                    continue
+            
+            # 所有备用方案都失败
+            raise RuntimeError(f"所有LLM服务都不可用。原始错误: {error_msg}")
+        else:
+            # 非503错误，直接抛出
+            raise
 
 
 def resolve_output_path(episode_date: str, output: Optional[str], overwrite: bool) -> Path:

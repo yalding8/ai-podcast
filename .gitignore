@@ -44,6 +44,10 @@ script_chunks/
 脚本输出/
 要点卡片/
 
+# 归档文件
+archive/
+!archive/.gitkeep
+
 # 临时文件
 *.log
 *.tmp
@@ -66,4 +70,19 @@ htmlcov/
 # 第三方数据
 podcast-news-aggregator/data/
 !podcast-news-aggregator/data/.gitkeep
-podcast-news-aggregator/data/puppeteer/
+
+# 测试数据（避免累积）
+**/test_*.json
+**/articles_*.json
+**/gdelt_test_*.json
+**/report_*.md
+**/script_*.json
+
+# 临时文档（避免累积）
+*_GUIDE.md
+*_PLAN.md
+*_SUMMARY.md
+TEST_*.md
+
+# 音色样本
+audio_exports/voice_samples/

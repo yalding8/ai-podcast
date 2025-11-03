@@ -1,0 +1,31 @@
+{
+  "episodes": [
+    {
+      "episode_number": 1,
+      "title": "异乡早咖啡 2025-11-03",
+      "audio_file": "audio_exports/2025/episode_2025-11-03_final.mp3",
+      "platforms": {
+        "rss": true
+      },
+      "published_at": "2025-11-03T16:01:29.034744"
+    },
+    {
+      "episode_number": 2,
+      "title": "异乡早咖啡 2025-11-03",
+      "audio_file": "audio_exports/2025/episode_2025-11-03_final.mp3",
+      "platforms": {
+        "rss": true
+      },
+      "published_at": "2025-11-03T16:06:11.015474"
+    },
+    {
+      "episode_number": 3,
+      "title": "异乡早咖啡 2025-11-03",
+      "audio_file": "audio_exports/2025/episode_2025-11-03_final.mp3",
+      "platforms": {
+        "rss": true
+      },
+      "published_at": "2025-11-03T16:56:49.812697"
+    }
+  ]
+}

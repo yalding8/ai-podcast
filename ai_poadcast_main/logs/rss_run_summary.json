@@ -1,6 +1,6 @@
 {
-  "run_at": "2025-11-03T05:13:33+00:00",
-  "total_items": 55,
+  "run_at": "2025-11-03T08:47:53+00:00",
+  "total_items": 51,
   "sources": {
     "ICEF Monitor": {
       "status": "success",
@@ -19,8 +19,8 @@
     "Study International": {
       "status": "success",
       "rss": "https://www.studyinternational.com/feed/",
-      "raw_new_items": 7,
-      "final_items": 7,
+      "raw_new_items": 6,
+      "final_items": 6,
       "priority": 10
     },
     "University World News": {
@@ -50,8 +50,8 @@
     "QS Top Universities": {
       "status": "success",
       "rss": "https://www.topuniversities.com/rss.xml",
-      "raw_new_items": 7,
-      "final_items": 6,
+      "raw_new_items": 3,
+      "final_items": 3,
       "priority": 9
     },
     "USCIS Newsroom": {

@@ -109,7 +109,7 @@ def main():
     parser.add_argument(
         "--speaker",
         default="zh_male_beijingxiaoye_emo_v2_mars_bigtts",
-        help="音色（默认男声，可选 zh_female_cancan_mars_bigtts）",
+        help="音色（默认北京小爷，可选 zh_male_aojiaobazong_moon_bigtts）",
     )
     parser.add_argument("--format", default="mp3", choices=["mp3", "wav"], help="音频格式")
     parser.add_argument("--sample-rate", type=int, default=24000, help="采样率")
@@ -128,7 +128,31 @@ def main():
         raise FileNotFoundError(f"文本文件不存在: {text_file}")
     
     text = text_file.read_text(encoding="utf-8").strip()
-    logger.info(f"读取文本: {len(text)} 字符")
+    
+    # 过滤注释和说明部分
+    filtered_lines = []
+    skip_section = False
+    
+    for line in text.split("\n"):
+        # 跳过以 # 开头的注释行
+        if line.strip().startswith("#"):
+            continue
+        
+        # 跳过脚本说明区域
+        if "脚本说明" in line or "**脚本说明**" in line:
+            skip_section = True
+            continue
+        
+        # 如果在说明区域中，继续跳过
+        if skip_section:
+            continue
+        
+        # 保留有效内容
+        if line.strip():
+            filtered_lines.append(line)
+    
+    text = "\n".join(filtered_lines).strip()
+    logger.info(f"读取文本: {len(text)} 字符（已过滤注释）")
     
     # 人工确认
     print("\n" + "="*60)
