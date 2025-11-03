@@ -66,3 +66,4 @@ htmlcov/
 # 第三方数据
 podcast-news-aggregator/data/
 !podcast-news-aggregator/data/.gitkeep
+podcast-news-aggregator/data/puppeteer/
