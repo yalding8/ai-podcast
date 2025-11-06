@@ -15,6 +15,8 @@ help:
 	@echo "  make publish       - 发布到各平台"
 	@echo "  make full-pipeline - 完整流水线（采集→脚本→音频→发布）"
 	@echo "  make test          - 运行测试"
+	@echo "  make test-cov      - 运行测试并生成覆盖率报告"
+	@echo "  make test-fast     - 快速测试（不生成覆盖率）"
 	@echo "  make clean         - 清理临时文件"
 
 collect:
@@ -95,6 +97,14 @@ full-pipeline:
 test:
 	@echo "🧪 运行测试..."
 	pytest tests/ -v
+
+test-cov:
+	@echo "🧪 运行测试并生成覆盖率报告..."
+	pytest tests/ -v --cov=ai_poadcast --cov=ai_poadcast_main --cov-report=html --cov-report=term-missing
+
+test-fast:
+	@echo "⚡ 快速测试（不生成覆盖率）..."
+	pytest tests/ -v --no-cov
 
 clean:
 	@echo "🧹 清理临时文件..."

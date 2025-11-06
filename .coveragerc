@@ -1,0 +1,33 @@
+# Coverage.py configuration
+[run]
+source = ai_poadcast, ai_poadcast_main
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */venv/*
+    */vendor/*
+    */legacy/*
+    setup.py
+
+[report]
+# 目标覆盖率: 70%
+precision = 2
+show_missing = True
+skip_covered = False
+sort = Cover
+
+# 忽略某些行
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    @abstractmethod
+    pass
+    \.\.\.
+
+[html]
+directory = htmlcov
