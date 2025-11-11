@@ -8,12 +8,16 @@ class DeepSeekClient:
     """DeepSeek LLM客户端"""
     
     def __init__(self, api_key: str = None, model: str = "deepseek-chat", base_url: str = None):
-        self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY")
+        if not api_key:
+            raise ValueError(
+                "DeepSeek API key is required but not provided. "
+                "Please set DEEPSEEK_API_KEY in your .env file or environment variables. "
+                "You can get an API key from https://platform.deepseek.com/"
+            )
+
+        self.api_key = api_key
         self.model = model
         self.base_url = (base_url or os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com")).rstrip("/")
-        
-        if not self.api_key:
-            raise ValueError("需要DEEPSEEK_API_KEY")
     
     def generate(self, prompt: str, temperature: float = 0.4, max_tokens: int = 1800) -> str:
         """生成文本"""

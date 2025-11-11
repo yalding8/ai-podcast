@@ -3,9 +3,17 @@
 
 class OpenAIClient:
     """OpenAI LLM客户端"""
-    
+
     def __init__(self, api_key: str = None, model: str = "gpt-4"):
+        if not api_key:
+            raise ValueError(
+                "OpenAI API key is required but not provided. "
+                "Please set OPENAI_API_KEY in your .env file or environment variables. "
+                "You can get an API key from https://platform.openai.com/"
+            )
+
         from openai import OpenAI
+        # Explicitly pass api_key to prevent SDK from auto-discovering credentials
         self.client = OpenAI(api_key=api_key)
         self.model = model
     
